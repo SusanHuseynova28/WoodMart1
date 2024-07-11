@@ -125,4 +125,156 @@ body {
   margin-right: 22px;
   border: 0;
   height: 1px;
+}
+
+.custom-menu-cards .custom-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+.custom-menu-cards .custom-menu .custom-category {
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+  padding: 4rem;
+  font-size: 50px;
+  width: 30%;
+}
+.custom-menu-cards .custom-menu .custom-cards {
+  width: 70%;
+  height: 85%;
+}
+.custom-menu-cards .custom-menu .custom-cards .custom-card-slider {
+  position: relative;
+  width: 95%;
+  height: 90%;
+  z-index: 1;
+}
+.custom-menu-cards .custom-menu .custom-cards .custom-card-slider .swiper-wrapper .swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+  position: relative;
+  text-align: center;
+  font-size: 15px;
+}
+.custom-menu-cards .custom-menu .custom-cards .custom-card-slider .swiper-wrapper .swiper-slide .custom-slider-img {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: 600px;
+}
+.custom-menu-cards .custom-menu .custom-cards .custom-card-slider .swiper-wrapper .swiper-slide .custom-slider-img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: bottom;
+     object-position: bottom;
+}
+.custom-menu-cards .custom-menu .custom-cards .custom-card-slider .swiper-wrapper .swiper-slide .custom-slider-img .custom-text-overlay {
+  bottom: 4rem;
+  left: 4rem;
+  position: absolute;
+  color: #fff;
+  text-align: left;
+  z-index: 1;
+}
+.custom-menu-cards .custom-menu .custom-cards .custom-card-slider .swiper-wrapper .swiper-slide .custom-slider-img .custom-text-overlay h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+.custom-menu-cards .custom-menu .custom-cards .custom-card-slider .swiper-wrapper .swiper-slide .custom-slider-img .custom-text-overlay p {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  color: rgba(255, 255, 255, 0.836);
+}
+.custom-menu-cards .custom-menu .custom-cards .custom-card-slider .swiper-wrapper .swiper-slide .custom-slider-img .custom-text-overlay button {
+  padding: 0.5rem 1rem;
+  background-color: rgb(94, 104, 33);
+  color: white;
+  border: none;
+  cursor: pointer;
+  width: 170px;
+  height: 40px;
+}
+.custom-menu-cards .custom-menu .custom-cards .custom-card-slider .swiper-wrapper .swiper-slide .custom-slider-img .custom-text-overlay button:hover {
+  background-color: rgb(89, 99, 28);
+}
+.custom-menu-cards .custom-menu .custom-cards .custom-card-slider .swiper-next {
+  right: 10px;
+  color: white;
+}
+.custom-menu-cards .custom-menu .custom-cards .custom-card-slider .swiper-prev {
+  left: 10px;
+  color: white;
+}
+.custom-menu-cards .custom-menu .custom-cards .custom-card-slider .swiper-page {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+}
+
+.custom-hr {
+  border: 0;
+  height: 2px;
+  background: rgb(94, 104, 33);
+  margin: 20px 0;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.video-title {
+  font-weight: bolder;
+  font-size: 30px;
+  padding-left: 6rem;
+  margin-top: 5rem;
+}
+
+.plant-video-section {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  padding: 6rem;
+  width: 100%;
+}
+.plant-video-section .plant-video-card {
+  position: relative;
+  width: 800px;
+  height: 600px;
+  overflow: hidden;
+}
+.plant-video-section .plant-video-card video {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.plant-video-section .plant-video-card .video-label {
+  padding: 3px 7px;
+  font-size: 15px;
+  border-radius: 5px;
+  margin-right: 25px;
+  color: white;
+  position: absolute;
+  bottom: 23px;
+  left: 15px;
+}
+.plant-video-section .plant-video-card .video-label p {
+  font-weight: bold;
+  margin-bottom: 15px;
+  font-size: 17px;
+}
+.plant-video-section .plant-video-card .video-label h2 {
+  font-size: 35px;
+  font-weight: bold;
+  margin-bottom: 25px;
+}
+.plant-video-section .plant-video-card .video-label h5 {
+  font-size: 17px;
+  font-weight: bold;
 }/*# sourceMappingURL=styles.css.map */

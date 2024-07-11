@@ -1,0 +1,169 @@
+@use "../utils/mixins" as *;
+@use "../utils/variables" as *;
+.custom-menu-cards {
+    .custom-menu {
+      @include Flex($justify: space-between, $items: center);
+      cursor: pointer;
+  
+      .custom-category {
+        @include Flex($direction:column,$gap:20px);
+        padding:4rem;
+        font-size: 50px;
+        width: 30%;
+       
+      }
+  
+      .custom-cards {
+        width: 70%;
+        height: 85%;
+        
+        .custom-card-slider {
+          position: relative;
+          width: 95%;
+          height: 90%;
+          z-index: 1;
+  
+          .swiper-wrapper {
+            .swiper-slide {
+              @include Flex($justify:center, $items: center);
+              background: #fff;
+              position: relative;
+              text-align: center;
+              font-size: 15px;
+  
+              .custom-slider-img {
+                overflow: hidden;
+                position: relative;
+                width: 100%;
+                height: 600px;
+  
+                img {
+                  width: 100%;
+                  height: 100%;
+                  object-fit: cover;
+                  object-position: bottom;
+                }
+  
+                .custom-text-overlay {
+                  bottom: 4rem;
+                  left: 4rem;
+                  position: absolute;
+                  color: #fff;
+                  text-align: left;
+                  z-index: 1;
+  
+                  h2 {
+                    font-size: 2rem;
+                    margin-bottom: 1rem;
+                  }
+  
+                  p {
+                    font-size: 1.1rem;
+                    margin-bottom: 1rem;
+                    color: rgba(255, 255, 255, 0.836);
+                  }
+  
+                  button {
+                    padding: 0.5rem 1rem;
+                    background-color: $hover-color;
+                    color: white;
+                    border: none;
+                    cursor: pointer;
+                    width: 170px;
+                    height: 40px;
+  
+                    &:hover {
+                      background-color: rgb(89, 99, 28);
+                    }
+                  }
+                }
+              }
+            }
+          }
+  
+          .swiper-next {
+            right: 10px;
+            color: $hover-word-white;
+          }
+  
+          .swiper-prev {
+            left: 10px;
+            color: $hover-word-white;
+          }
+  
+          .swiper-page{
+            position: absolute;
+            bottom: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 10;
+          }
+        }
+      }
+    }
+  }
+  
+  .custom-hr {
+    border: 0;
+    height: 2px;
+    background: rgb(94, 104, 33);
+    margin: 20px 0;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  
+  .video-title{
+    font-weight: $video-font-weight-word2;
+    font-size: 30px;
+    padding-left: 6rem;
+    margin-top: 5rem;
+  }
+  .plant-video-section {
+    @include Flex($justify: space-between, $gap: 2rem);
+    padding: 6rem;
+    width: 100%;
+
+    .plant-video-card {
+        position: relative;
+        width: 800px;
+        height: 600px; 
+        overflow: hidden; 
+        
+        video {
+            width: 100%;
+            height: 100%; 
+            object-fit: cover; 
+        }
+
+        .video-label {
+            padding: 3px 7px;
+            font-size: 15px;
+            border-radius: 5px;
+            margin-right: 25px;
+            color: $hover-word-white;
+            position: absolute;
+            bottom: 23px; 
+            left: 15px;
+  
+
+            p {
+                font-weight: $video-font-weight-word;
+                margin-bottom: 15px; 
+                font-size: 17px;
+                
+        
+            }
+
+            h2 {
+                font-size: 35px;
+                font-weight:$video-font-weight-word;
+                margin-bottom: 25px;
+            }
+
+            h5 {
+                font-size: 17px;
+                font-weight: $video-font-weight-word;
+            }
+        }
+    }
+}
