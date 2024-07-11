@@ -7,4 +7,122 @@
 
 body {
   background-color: rgb(246, 243, 237);
+}
+
+.site-header {
+  margin-top: 2rem;
+}
+.site-header-logo {
+  display: flex;
+  align-items: center;
+}
+.site-header-logo img {
+  margin-right: 90px;
+  height: 40px;
+}
+.site-header-logo span {
+  color: #333;
+  font-weight: bold;
+  font-size: 16px;
+}
+.site-header-actions {
+  display: flex;
+  align-items: center;
+}
+.site-header-actions a {
+  display: flex;
+  align-items: center;
+  margin-left: 16px;
+  color: #333;
+  font-size: 18px;
+  transition: color 0.3s;
+  text-decoration: none;
+}
+.site-header-actions a i {
+  margin-right: 6px;
+}
+.site-header-actions a:hover {
+  color: #808080;
+}
+.site-header-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 25px;
+}
+.site-header-nav ul {
+  display: flex;
+  list-style: none;
+}
+.site-header-nav ul li {
+  position: relative;
+  padding: 2% 0;
+  margin-right: 22px;
+}
+.site-header-nav ul li a {
+  font-size: 18px;
+  transition: color 0.3s;
+  text-decoration: none;
+  color: #333;
+}
+.site-header-nav ul li a:hover {
+  color: rgb(94, 104, 33);
+}
+.site-header-nav ul li.dropdown {
+  display: block;
+}
+.site-header-nav ul li.dropdown .dropdown-menu {
+  display: flex;
+  display: none;
+  top: 50%;
+  margin-top: 25px;
+  background-color: #fff;
+  padding: 10px;
+  border: 1px solid white;
+  z-index: 1;
+  gap: 90px;
+  position: absolute;
+  width: 1350px;
+  height: 160px;
+}
+.site-header-nav ul li.dropdown .dropdown-menu .dropdown-category {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  margin-left: 33px;
+}
+.site-header-nav ul li.dropdown .dropdown-menu .dropdown-category img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  transition: transform 0.3s ease;
+  margin-bottom: 5px;
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+}
+.site-header-nav ul li.dropdown .dropdown-menu .dropdown-category p {
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: none;
+  margin-bottom: 7px;
+}
+.site-header-nav ul li.dropdown .dropdown-menu .dropdown-category span {
+  font-size: 16px;
+  color: #777;
+  font-weight: 500;
+}
+.site-header-nav ul li.dropdown .dropdown-menu .dropdown-category:hover img {
+  transform: scale(1.1);
+}
+.site-header-nav ul li.dropdown:hover .dropdown-menu {
+  display: flex;
+}
+.site-header hr {
+  background: rgb(94, 104, 33);
+  margin: 25px 0;
+  margin-left: 22px;
+  margin-right: 22px;
+  border: 0;
+  height: 1px;
 }/*# sourceMappingURL=styles.css.map */

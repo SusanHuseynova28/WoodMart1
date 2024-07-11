@@ -1,0 +1,124 @@
+@use "../utils/mixins" as *;
+@use "../utils/variables" as *;
+.site-header {
+    margin-top: 2rem;
+
+    &-logo {
+        @include Flex($items: center);
+        img {
+            margin-right: 90px;
+            height: 40px;
+            
+        }
+        span {
+            color: $a-hover-color;
+            font-weight: bold;
+            font-size:$font-size-word;
+        }
+    }
+
+    &-actions {
+        @include Flex($items: center);
+        a {
+            @include Flex($items: center);
+            margin-left: $font-size-word;
+            color:$a-hover-color;
+            font-size: 18px;
+            transition: color 0.3s;
+            text-decoration: none;
+            i {
+                margin-right: 6px;
+            }
+            &:hover {
+                color: $hover-word;
+            }
+        }
+    }
+
+    &-top {
+        @include Flex($justify: space-between, $items: center);
+        padding: 0 25px;
+    }
+
+    &-nav {
+        ul {
+            @include Flex;
+            list-style: none;
+            li {
+                position: relative;
+                padding: 2% 0;
+                margin-right: 22px;
+                a {
+                    font-size: 18px;
+                    transition: color 0.3s;
+                    text-decoration: none;
+                    color: $a-hover-color;
+                    &:hover {
+                        color: $hover-color;
+                    }
+                }
+                &.dropdown {
+                    display: block;
+                    .dropdown-menu {
+                       @include Flex;
+                        display: none;
+                        top: 50%;
+                        margin-top: 25px;
+                        background-color: #fff;
+                        padding: 10px;
+                        border: 1px solid white;
+                        z-index: 1;
+                        gap: 90px;
+                        position: absolute;
+                        width: 1350px;
+                        height: 160px;
+            
+                        .dropdown-category {
+                            @include Flex ($direction:column, $items:center);
+                            text-align: center;
+                            margin-left: 33px;
+                            
+                            img {
+                                object-fit: cover;
+                                transition: transform 0.3s ease;
+                                margin-bottom: 5px;
+                                width: 75px;
+                                height: 75px;
+                                border-radius: 50%;
+                               
+                            }
+                            p {
+                                font-size: 16px;
+                                font-weight: 400;
+                                text-transform: none;
+                                margin-bottom: 7px;
+                               
+                            }
+                            span {
+                                font-size: $font-size-word;
+                                color: #777;
+                                font-weight: 500;
+                            }
+                            &:hover img {
+                                transform: scale(1.1);
+                            }
+                        }
+                    }
+                    &:hover .dropdown-menu {
+                       @include Flex;
+                    }
+                }
+            }
+        }
+    }
+
+    hr{
+        background: $hover-color;
+        margin: 25px 0;
+        margin-left: 22px;
+        margin-right: 22px;
+        border: 0;
+        height: 1px;
+    
+    }
+}
