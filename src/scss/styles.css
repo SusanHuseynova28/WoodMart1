@@ -202,22 +202,22 @@ body {
 .main-footer {
   display: flex;
   flex-direction: row;
-  padding: 30px;
   border-top: 2px solid #7c8c42;
   border-bottom: 2px solid #7c8c42;
+  padding: 35px;
 }
 
 .footer-left {
-  width: 40%;
+  margin-right: 10%;
+  margin-left: -50px;
+  width: 37%;
   text-align: start;
-  margin-right: 9%;
-  margin-left: -45px;
 }
 
 .footer-right {
-  width: 55%;
+  width: 60%;
   display: flex;
-  justify-content: space-between;
+  flex-direction: space-between;
 }
 
 .footer-logo {
@@ -236,13 +236,13 @@ body {
 }
 
 .subscription-container input[type=email] {
-  padding: 0.5rem;
-  border: 1px solid rgba(94, 104, 33, 0.0901960784);
-  margin-right: 1rem;
   flex: 1;
-  height: 30px;
+  height: 40px;
   font-size: 15px;
   background-color: rgba(94, 104, 33, 0.0901960784);
+  padding: 0.2rem;
+  border: 1px solid rgba(94, 104, 33, 0.0901960784);
+  margin-right: 1rem;
 }
 
 .subscription-container button {
@@ -314,12 +314,12 @@ body {
 
 .shop-links::before {
   content: "";
-  position: absolute;
-  left: -20px;
+  background-color: #7c8c42;
   top: 0;
   bottom: 0;
   width: 2px;
-  background-color: #7c8c42;
+  position: absolute;
+  left: -20px;
 }
 
 .contact-info .email, .contact-info .phone, .contact-info .address {
@@ -353,9 +353,9 @@ hr {
   font-weight: bold;
 }
 .footer-bottom .payment-methods {
+  display: flex;
   list-style: none;
   padding: 0;
-  display: flex;
 }
 
 .custom-menu-cards .custom-menu {
