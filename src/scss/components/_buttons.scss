@@ -26,11 +26,11 @@
     }
 
     .plant-second-icon {
-      margin-top: 0.5rem;
+      margin-top: 1rem;     
     }
 
     .flower-icon img, .plant-icon img, .plant-second-icon img {
-      margin-left: 1rem;
+      margin-left: 1rem;      
     }
   }
 
@@ -39,7 +39,7 @@
     justify-content: space-between;
 
     .explore-cards, .card-second-video {
-      width: 48%; // Adjust width to allow for spacing and borders
+      width: 48%;
       display: flex;
       flex-direction: column;
       gap: 2rem;
@@ -55,23 +55,42 @@
         gap: 2rem;
 
         &-title {
-          display: flex;
-          justify-content: space-between;
-          align-items: center;
+          h3 {
+            font-size: 3rem;
+            font-weight: 600;
+          }
         }
-
+        
         &-author {
           display: flex;
+          gap: 1rem;
           align-items: center;
+          margin-top: 0.4rem;
         }
       }
     }
 
     .card-second-video {
+      position: relative;
+
       img {
         width: 100%;
         height: auto;
+        cursor: pointer; 
+
+       
+      }
+
+      a {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 50px;
+        color: $hover-word-white; 
+        transition: all 0.25s ease-in-out;
+
+      }
+    }
   }
-}
-}
 }

@@ -32,7 +32,7 @@ body {
   font-size: 5rem;
 }
 .explore-container .plant-second-icon {
-  margin-top: 0.5rem;
+  margin-top: 1rem;
 }
 .explore-container .flower-icon img, .explore-container .plant-icon img, .explore-container .plant-second-icon img {
   margin-left: 1rem;
@@ -56,18 +56,32 @@ body {
   flex-direction: column;
   gap: 2rem;
 }
-.explore .explore-content .explore-cards .explore-card-title {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+.explore .explore-content .explore-cards .explore-card-title h3 {
+  font-size: 3rem;
+  font-weight: 600;
 }
 .explore .explore-content .explore-cards .explore-card-author {
   display: flex;
+  gap: 1rem;
   align-items: center;
+  margin-top: 0.4rem;
+}
+.explore .explore-content .card-second-video {
+  position: relative;
 }
 .explore .explore-content .card-second-video img {
   width: 100%;
   height: auto;
+  cursor: pointer;
+}
+.explore .explore-content .card-second-video a {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 50px;
+  color: white;
+  transition: all 0.25s ease-in-out;
 }
 
 .cards-title {
@@ -372,7 +386,7 @@ body {
 
 .sidebar {
   position: fixed;
-  right: -300px; /* initially hidden */
+  right: -300px;
   top: 0;
   width: 300px;
   height: 100%;
@@ -380,6 +394,19 @@ body {
   box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
   transition: right 0.3s ease;
   z-index: 100;
+}
+.sidebar .sidebar-title {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+}
+.sidebar .sidebar-title #sidebarCloseBtn {
+  background-color: white;
+  border: 1px solid white;
+  font-size: 1rem;
+}
+.sidebar .sidebar-title p {
+  font-size: 1.7rem;
 }
 
 .sidebar.visible {

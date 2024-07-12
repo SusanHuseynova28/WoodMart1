@@ -34,8 +34,7 @@ document.addEventListener("DOMContentLoaded", () => {
         },
     });
 });
-
-
+// Function to open or close the sidebar
 function toggleSidebar() {
     var sidebar = document.getElementById('sidebar');
     sidebar.classList.toggle('visible');
@@ -44,6 +43,11 @@ function toggleSidebar() {
 
 document.getElementById('cartIcon').addEventListener('click', function(event) {
     event.preventDefault(); 
+    toggleSidebar();
+});
+
+
+document.getElementById('sidebarCloseBtn').addEventListener('click', function() {
     toggleSidebar();
 });
 
@@ -57,8 +61,11 @@ document.addEventListener('click', function(event) {
     }
 });
 
+// 
 
 
+
+// API
 document.addEventListener('DOMContentLoaded', function() {
     const shopLink = document.getElementById('shopLink');
     const dropdownMenu = document.getElementById('dropdownMenu');
