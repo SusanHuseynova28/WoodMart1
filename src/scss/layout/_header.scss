@@ -79,12 +79,13 @@
                             margin-left: 33px;
                             
                             img {
-                                object-fit: cover;
-                                transition: transform 0.3s ease;
                                 margin-bottom: 5px;
                                 width: 75px;
                                 height: 75px;
                                 border-radius: 50%;
+                                object-fit: cover;
+                                transition: transform 0.3s ease;
+                               
                                
                             }
                             p {
@@ -121,4 +122,4 @@
         height: 1px;
     
     }
-}
+} 

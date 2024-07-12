@@ -11,7 +11,6 @@
 .cards-container {
     .cards {
       @include Flex($justify: space-between,$gap:15px);
-      
       flex-wrap: nowrap;
       padding: 3rem;
   
@@ -21,7 +20,7 @@
         margin-bottom: 3rem;
   
         img {
-            height: auto;
+          height: auto;
           display: block;
           width: 100%;
           
@@ -86,4 +85,130 @@
       }
     }
   }
-  
+ .main-card-image {
+  @include Flex($justify: space-around, $items: center);
+  padding: 1rem;
+
+  .card1 {
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+
+    .image-container {
+      position: relative;
+      width: 100%;
+      overflow: hidden;
+
+      img {
+        width: 100%;
+        transition: opacity 0.3s ease-in-out;
+      }
+
+      .hover-image {
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0;
+      }
+
+      &:hover .hover-image {
+        opacity: 1;
+      }
+
+      &:hover .main-image {
+        opacity: 0;
+      }
+
+      .icons {
+        position: absolute;
+        bottom: 10px; /* Adjust to your preference */
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        flex-direction: column; /* Ensure icons are stacked vertically */
+        gap: 10px;
+
+        .icon {
+          width: 30px;
+          height: 30px;
+          color: #000;
+          cursor: pointer;
+          transition: background-color 0.3s;
+
+          &.search {
+            background: url("https://i.pinimg.com/564x/a6/04/ab/a604ab7a709bf8a7a671294567cc9010.jpg") no-repeat center center / contain;
+          }
+
+          &.heart {
+            background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtmmH46yqC2VFfX9PdU2BTBNMxOrbdWjw2Fw&s') no-repeat center center / contain;
+          }
+
+          &:hover {
+            transition: background-color 0.3s;
+            background-color: rgba(0, 0, 0, 0.1); /* Example background color change */
+          }
+        }
+      }
+    }
+  }
+
+  .details {
+    padding-left: 3rem;
+
+    h3 {
+      padding-left: 1rem;
+      font-size: 1.3rem;
+      margin-top: 0.5rem;
+    }
+
+    .h4 {
+      padding-left: 0.8rem;
+      font-size: 1.3rem;
+      margin-top: 0.5rem;
+    }
+
+    .rating {
+      margin: 10px 0;
+      color: #ffa500;
+
+      .star-card {
+        padding-left: 3rem;
+        font-size: 1.5rem;
+      }
+    }
+
+    .price {
+      padding-left: 2.3rem;
+      font-size: 1.2rem;
+
+      .original-price {
+        text-decoration: line-through;
+        color: $original-price-color;
+        margin-right: 10px;
+      }
+
+      .discounted-price {
+        color: #000;
+      }
+    }
+
+    .select-options {
+      background-color: $hover-color;
+      margin-left: 2.5rem;
+      border: none;
+      margin-top: 0.5rem;
+      width: 7rem;
+      height: 2.5rem;
+      font-size: 0.8rem;
+      font-weight: 500;
+      color: $hover-word-white;
+      cursor: pointer;
+      transition: background-color 0.3s;
+
+      &:hover {
+        background-color: darken($hover-color, 10%);
+      }
+    }
+  }
+}
