@@ -30,8 +30,7 @@
 }
 
 .subscription-container {
-  display: flex;
-  justify-content: start;
+ @include Flex($justify:start);
   margin-bottom: 25px;
 }
 

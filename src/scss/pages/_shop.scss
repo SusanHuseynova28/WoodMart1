@@ -1,6 +1,7 @@
 @use "../utils/mixins" as *;
 @use "../utils/variables" as *;
 .custom-menu-cards {
+  
     .custom-menu {
       @include Flex($justify: space-between, $items: center);
       cursor: pointer;
@@ -11,8 +12,24 @@
         font-size: 50px;
         width: 30%;
        
+       }
+       .category-item1:hover{
+        color: $hover-color;
+       }
+       .category-item2:hover{
+        color: $hover-color;
+       }
+       .category-item3:hover{
+        color: $hover-color;
+       }
+       .category-item4:hover{
+        color: $hover-color;
+       }
+       .category-item5:hover{
+        color: $hover-color;
+       }
       }
-  
+     
       .custom-cards {
         width: 70%;
         height: 85%;
@@ -101,7 +118,7 @@
         }
       }
     }
-  }
+  
   
   .custom-hr {
     border: 0;
@@ -288,7 +305,7 @@
           transition: background-color 0.3s;
   
           &:hover {
-              background-color: darken(#ffcc00, 10%);
+              background-color: darken($hover-color, 10%);
           }
       }
   }
