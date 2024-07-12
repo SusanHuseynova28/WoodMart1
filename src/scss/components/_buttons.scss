@@ -2,109 +2,73 @@
 @use "../utils/variables" as *;
 
 .explore {
-    margin-top: 3rem;
-    padding: 2% 3%;
-    background: linear-gradient(to bottom, #5f6921 60%, $bodyColor 40%);
-    
-    &-container {
+  margin-top: 1rem;
+  background-color: $explore-color;
+  width: 100%;
+  height: 600px;
+
+  &-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 3rem;
+
+    .flower-icon {
+      font-size: 4.5rem;
+      font-weight: 700;
+      color: white;
+    }
+    .plant-icon {
+      font-size: 5rem;
+      font-weight: 700;
+      color: white;
+      margin-top: 0.5rem;
+    }
+    .plant-second-icon {
+      font-size: 4.5rem;
+      font-weight: 700;
+      color: white;
+      margin-top: 0.5rem;
+    }
+  }
+
+  .explore-cards {
+    display: flex;
+    justify-content: space-between;
+    width: 38rem;
+    height: 25rem;
+    background-color: #e7e5d9;
+    margin-top: 1rem;
+    padding: 2rem;
+
+    .explore-card {
       display: flex;
-      justify-content: center;
-      flex-direction: column;
+      flex-direction:column;
+      
       gap: 2rem;
-      
+
+
       &-title {
-        
-        .h-word {
-        width: 700px;
-        height: 300px;
-          display: flex;
-          align-items: center;
-          font-size: 50px;
-          
-          .flower-icon,
-          .plant-icon,
-          .plant-second-icon {
-            width: 5rem;
-            height: 60px;
-            background-repeat: no-repeat;
-            border: 50%;
-          }
-          
-          .flower-icon {
-            background-image: url("https://woodmart.xtemos.com/plants/wp-content/uploads/sites/12/2023/05/ps-top-min-1.png.webp");
-          }
-          
-          .plant-icon {
-            background-image: url("https://woodmart.xtemos.com/plants/wp-content/uploads/sites/12/2023/05/ps-top-min-2.png.webp");
-          }
-          
-          .plant-second-icon {
-            background-image: url("https://woodmart.xtemos.com/plants/wp-content/uploads/sites/12/2023/05/ps-top-min-3.png");
-          }
-        }
-      }
-      
-      &-cards {
         display: flex;
-        gap: 2rem;
+        justify-content: space-between;
+        align-items: center;
+       
+      }
+
+      &-author {
+        display: flex;
+        align-items: center;
+      }
+
+      &-second {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
         
-        &-card {
-          display: flex;
-          flex-direction: column;
-          justify-content: space-between;
-          gap: 2rem;
-          height: 30%;
-          width: 30rem;
-          padding: 2rem;
-          background-color: $hover-color;
-          
-          &-title {
-            font-size: 26px;
-          }
-          
-          &-author {
-            border-top: 2px solid $hover-color;
-            padding-top: 1rem;
-            display: flex;
-            gap: 2rem;
-            
-            p {
-              color: gray;
-            }
-          }
-        }
-        
-        &-card-second {
-          position: relative;
-          
-          &-video {
-            height: 30rem;
-            width: 100%;
-            overflow: hidden;
-            
-            img {
-              width: 50rem;
-              height: 25.3rem;
-              object-fit: cover;
-            }
-            
-            a {
-              font-size: 80px;
-              color: $hover-color;
-              transition: all 0.25s ease-in-out;
-              
-              &:hover {
-                opacity: 0.9;
-              }
-              
-              position: absolute;
-              left: 50%;
-              top: 50%;
-              transform: translate(-50%, -80%);
-            }
-          }
-        }
+
       }
     }
   }
-  
+}
+
