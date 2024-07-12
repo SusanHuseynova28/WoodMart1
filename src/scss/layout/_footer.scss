@@ -112,6 +112,15 @@
       }
   }
 }
+.contact-info {
+  .email, .phone, .address {
+      margin-bottom: 25px;
+      &:hover {
+          color: $footer-top-color;
+      }
+  }
+}
+
 
 .shop-links::before {
   content: '';

@@ -1,0 +1,33 @@
+{
+    "products": [
+      {
+        "id": 1,
+        "name": "Anthirum King",
+        "price": 88.00,
+        "image": "https://woodmart.xtemos.com/plants/wp-content/uploads/sites/12/2023/05/w-indoor-plants-small-5-0.jpg",
+        "hoverImage": "https://woodmart.xtemos.com/plants/wp-content/uploads/sites/12/2023/05/w-indoor-plants-small-5-1-430x491.jpg.webp"
+      },
+      {
+        "id": 2,
+        "name": "Bromeliad Vriesea",
+        "price": 88.00,
+        "image": "https://woodmart.xtemos.com/plants/wp-content/uploads/sites/12/2023/05/w-indoor-plants-small-4-4-430x491.jpg",
+        "hoverImage": "https://woodmart.xtemos.com/plants/wp-content/uploads/sites/12/2023/05/w-indoor-plants-small-5-1-430x491.jpg.webp"
+      },
+      {
+        "id": 3,
+        "name": "Bromeliad Antonio Pink",
+        "price": 88.00,
+        "image": "https://woodmart.xtemos.com/plants/wp-content/uploads/sites/12/2023/05/w-indoor-plants-small-12-1-430x491.jpg.webp",
+        "hoverImage": "https://woodmart.xtemos.com/plants/wp-content/uploads/sites/12/2023/05/w-indoor-plants-small-5-1-430x491.jpg.webp"
+      },
+      {
+        "id": 4,
+        "name": "Corkscrew Croton",
+        "price": 88.00,
+        "image": "https://woodmart.xtemos.com/plants/wp-content/uploads/sites/12/2023/05/w-indoor-plants-medium-4-1-430x491.jpg.webp",
+        "hoverImage": "https://woodmart.xtemos.com/plants/wp-content/uploads/sites/12/2023/05/w-indoor-plants-small-5-1-430x491.jpg.webp"
+      }
+    ]
+  }
+  

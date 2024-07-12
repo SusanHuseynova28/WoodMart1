@@ -9,6 +9,94 @@ body {
   background-color: rgb(246, 243, 237);
 }
 
+.explore {
+  margin-top: 3rem;
+  padding: 2% 3%;
+  background: linear-gradient(to bottom, #5f6921 60%, #f6f3ed 40%);
+}
+.explore-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2rem;
+}
+.explore-container-title .h-word {
+  width: 700px;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  font-size: 50px;
+}
+.explore-container-title .h-word .flower-icon,
+.explore-container-title .h-word .plant-icon,
+.explore-container-title .h-word .plant-second-icon {
+  width: 5rem;
+  height: 60px;
+  background-repeat: no-repeat;
+  border: 50%;
+}
+.explore-container-title .h-word .flower-icon {
+  background-image: url("https://woodmart.xtemos.com/plants/wp-content/uploads/sites/12/2023/05/ps-top-min-1.png.webp");
+}
+.explore-container-title .h-word .plant-icon {
+  background-image: url("https://woodmart.xtemos.com/plants/wp-content/uploads/sites/12/2023/05/ps-top-min-2.png.webp");
+}
+.explore-container-title .h-word .plant-second-icon {
+  background-image: url("https://woodmart.xtemos.com/plants/wp-content/uploads/sites/12/2023/05/ps-top-min-3.png");
+}
+.explore-container-cards {
+  display: flex;
+  gap: 2rem;
+}
+.explore-container-cards-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 2rem;
+  height: 30%;
+  width: 30rem;
+  padding: 2rem;
+  background-color: rgb(94, 104, 33);
+}
+.explore-container-cards-card-title {
+  font-size: 26px;
+}
+.explore-container-cards-card-author {
+  border-top: 2px solid rgb(94, 104, 33);
+  padding-top: 1rem;
+  display: flex;
+  gap: 2rem;
+}
+.explore-container-cards-card-author p {
+  color: gray;
+}
+.explore-container-cards-card-second {
+  position: relative;
+}
+.explore-container-cards-card-second-video {
+  height: 30rem;
+  width: 100%;
+  overflow: hidden;
+}
+.explore-container-cards-card-second-video img {
+  width: 50rem;
+  height: 25.3rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.explore-container-cards-card-second-video a {
+  font-size: 80px;
+  color: rgb(94, 104, 33);
+  transition: all 0.25s ease-in-out;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -80%);
+}
+.explore-container-cards-card-second-video a:hover {
+  opacity: 0.9;
+}
+
 .cards-title {
   font-weight: bolder;
   padding: 2rem;
@@ -418,6 +506,13 @@ body {
   color: #333;
 }
 .shop-links ul li a:hover, .useful-links ul li a:hover, .contact-info ul li a:hover {
+  color: #7c8c42;
+}
+
+.contact-info .email, .contact-info .phone, .contact-info .address {
+  margin-bottom: 25px;
+}
+.contact-info .email:hover, .contact-info .phone:hover, .contact-info .address:hover {
   color: #7c8c42;
 }
 
