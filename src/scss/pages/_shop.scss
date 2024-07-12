@@ -321,7 +321,6 @@
 
     .cards {
       @include Flex($direction:column,$gap:2rem);
-      
       padding: 2rem 0;
       border-top: 2px solid $hover-color;
       border-bottom: 2px solid $hover-color;
@@ -380,6 +379,8 @@
           @include Flex($gap:2rem,$direction:column,);
           .card-content-information {
             color: gray;
+            display: flex;
+            gap: 1rem;
 
             .card-content-information-first {
               @include Flex($items: center,$gap:0.5rem);
@@ -393,7 +394,7 @@
               }
 
               img {
-                border-radius: 2rem;
+                border-radius: 3rem;
               }
             }
 
@@ -409,6 +410,10 @@
           .card-content-name {
             font-size: 23px;
             width: 45rem;
+            margin-bottom: 2rem;
+            &:hover{
+              color:gray;
+            }
 
             h2 {
               transition: all 0.25s ease-in-out;

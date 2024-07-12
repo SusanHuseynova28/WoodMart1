@@ -951,6 +951,8 @@ hr {
 }
 .articles .container .cards .card .card-content .card-content-information {
   color: gray;
+  display: flex;
+  gap: 1rem;
 }
 .articles .container .cards .card .card-content .card-content-information .card-content-information-first {
   display: flex;
@@ -965,7 +967,7 @@ hr {
   opacity: 1;
 }
 .articles .container .cards .card .card-content .card-content-information .card-content-information-first img {
-  border-radius: 2rem;
+  border-radius: 3rem;
 }
 .articles .container .cards .card .card-content .card-content-information .card-content-information-second {
   display: flex;
@@ -978,6 +980,10 @@ hr {
 .articles .container .cards .card .card-content .card-content-name {
   font-size: 23px;
   width: 45rem;
+  margin-bottom: 2rem;
+}
+.articles .container .cards .card .card-content .card-content-name:hover {
+  color: gray;
 }
 .articles .container .cards .card .card-content .card-content-name h2 {
   transition: all 0.25s ease-in-out;
