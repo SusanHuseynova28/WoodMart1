@@ -17,55 +17,57 @@ body {
 }
 .explore-container {
   display: flex;
-  justify-content: center;
   flex-direction: column;
   gap: 2rem;
   padding: 3rem;
 }
-.explore-container .flower-icon {
+.explore-container .flower-icon, .explore-container .plant-icon, .explore-container .plant-second-icon {
   font-size: 4.5rem;
   font-weight: 700;
   color: white;
+  display: flex;
+  align-items: center;
 }
 .explore-container .plant-icon {
   font-size: 5rem;
-  font-weight: 700;
-  color: white;
-  margin-top: 0.5rem;
 }
 .explore-container .plant-second-icon {
-  font-size: 4.5rem;
-  font-weight: 700;
-  color: white;
   margin-top: 0.5rem;
 }
-.explore .explore-cards {
+.explore-container .flower-icon img, .explore-container .plant-icon img, .explore-container .plant-second-icon img {
+  margin-left: 1rem;
+}
+.explore .explore-content {
   display: flex;
   justify-content: space-between;
-  width: 38rem;
-  height: 25rem;
-  background-color: #e7e5d9;
-  margin-top: 1rem;
-  padding: 2rem;
 }
-.explore .explore-cards .explore-card {
+.explore .explore-content .explore-cards, .explore .explore-content .card-second-video {
+  width: 48%;
   display: flex;
   flex-direction: column;
   gap: 2rem;
 }
-.explore .explore-cards .explore-card-title {
+.explore .explore-content .explore-cards {
+  background-color: #e7e5d9;
+  padding: 2rem;
+}
+.explore .explore-content .explore-cards .explore-card {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.explore .explore-content .explore-cards .explore-card-title {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.explore .explore-cards .explore-card-author {
+.explore .explore-content .explore-cards .explore-card-author {
   display: flex;
   align-items: center;
 }
-.explore .explore-cards .explore-card-second {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+.explore .explore-content .card-second-video img {
+  width: 100%;
+  height: auto;
 }
 
 .cards-title {
@@ -366,6 +368,22 @@ body {
   margin-right: 22px;
   border: 0;
   height: 1px;
+}
+
+.sidebar {
+  position: fixed;
+  right: -300px; /* initially hidden */
+  top: 0;
+  width: 300px;
+  height: 100%;
+  background: #fff;
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
+  transition: right 0.3s ease;
+  z-index: 100;
+}
+
+.sidebar.visible {
+  right: 0;
 }
 
 .main-footer {

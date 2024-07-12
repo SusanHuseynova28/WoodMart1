@@ -35,6 +35,30 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 });
 
+
+function toggleSidebar() {
+    var sidebar = document.getElementById('sidebar');
+    sidebar.classList.toggle('visible');
+}
+
+
+document.getElementById('cartIcon').addEventListener('click', function(event) {
+    event.preventDefault(); 
+    toggleSidebar();
+});
+
+
+document.addEventListener('click', function(event) {
+    var sidebar = document.getElementById('sidebar');
+    var cartIcon = document.getElementById('cartIcon');
+
+    if (!sidebar.contains(event.target) && event.target !== cartIcon) {
+        sidebar.classList.remove('visible');
+    }
+});
+
+
+
 document.addEventListener('DOMContentLoaded', function() {
     const shopLink = document.getElementById('shopLink');
     const dropdownMenu = document.getElementById('dropdownMenu');

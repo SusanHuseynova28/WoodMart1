@@ -8,12 +8,11 @@
         img {
             margin-right: 90px;
             height: 40px;
-            
         }
         span {
             color: $a-hover-color;
             font-weight: bold;
-            font-size:$font-size-word;
+            font-size: $font-size-word;
         }
     }
 
@@ -22,7 +21,7 @@
         a {
             @include Flex($items: center);
             margin-left: $font-size-word;
-            color:$a-hover-color;
+            color: $a-hover-color;
             font-size: 18px;
             transition: color 0.3s;
             text-decoration: none;
@@ -60,7 +59,7 @@
                 &.dropdown {
                     display: block;
                     .dropdown-menu {
-                       @include Flex;
+                        @include Flex;
                         display: none;
                         top: 50%;
                         margin-top: 25px;
@@ -74,7 +73,7 @@
                         height: 170px;
             
                         .dropdown-category {
-                            @include Flex ($direction:column, $items:center);
+                            @include Flex($direction: column, $items: center);
                             text-align: center;
                             margin-left: 33px;
                             
@@ -85,15 +84,12 @@
                                 border-radius: 50%;
                                 object-fit: cover;
                                 transition: transform 0.3s ease;
-                               
-                               
                             }
                             p {
                                 font-size: 16px;
                                 font-weight: 400;
                                 text-transform: none;
                                 margin-bottom: 7px;
-                               
                             }
                             span {
                                 font-size: $font-size-word;
@@ -106,20 +102,35 @@
                         }
                     }
                     &:hover .dropdown-menu {
-                       @include Flex;
+                        display: flex;
                     }
                 }
             }
         }
     }
 
-    hr{
+    hr {
         background: $hover-color;
         margin: 25px 0;
         margin-left: 22px;
         margin-right: 22px;
         border: 0;
         height: 1px;
-    
     }
-} 
+}
+
+.sidebar {
+    position: fixed;
+    right: -300px; /* initially hidden */
+    top: 0;
+    width: 300px;
+    height: 100%;
+    background: #fff;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
+    transition: right 0.3s ease;
+    z-index: 100;
+}
+
+.sidebar.visible {
+    right: 0;
+}

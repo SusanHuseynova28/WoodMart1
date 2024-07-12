@@ -3,72 +3,75 @@
 
 .explore {
   margin-top: 1rem;
-  background-color: $explore-color;
+  background-color: #5f6921;
   width: 100%;
   height: 600px;
 
   &-container {
     display: flex;
-    justify-content: center;
     flex-direction: column;
     gap: 2rem;
     padding: 3rem;
 
-    .flower-icon {
+    .flower-icon, .plant-icon, .plant-second-icon {
       font-size: 4.5rem;
       font-weight: 700;
       color: white;
+      display: flex;
+      align-items: center;
     }
+
     .plant-icon {
       font-size: 5rem;
-      font-weight: 700;
-      color: white;
+    }
+
+    .plant-second-icon {
       margin-top: 0.5rem;
     }
-    .plant-second-icon {
-      font-size: 4.5rem;
-      font-weight: 700;
-      color: white;
-      margin-top: 0.5rem;
+
+    .flower-icon img, .plant-icon img, .plant-second-icon img {
+      margin-left: 1rem;
     }
   }
 
-  .explore-cards {
+  .explore-content {
     display: flex;
     justify-content: space-between;
-    width: 38rem;
-    height: 25rem;
-    background-color: #e7e5d9;
-    margin-top: 1rem;
-    padding: 2rem;
 
-    .explore-card {
+    .explore-cards, .card-second-video {
+      width: 48%; // Adjust width to allow for spacing and borders
       display: flex;
-      flex-direction:column;
-      
+      flex-direction: column;
       gap: 2rem;
+    }
 
+    .explore-cards {
+      background-color: #e7e5d9;
+      padding: 2rem;
 
-      &-title {
+      .explore-card {
         display: flex;
-        justify-content: space-between;
-        align-items: center;
-       
-      }
+        flex-direction: column;
+        gap: 2rem;
 
-      &-author {
-        display: flex;
-        align-items: center;
-      }
+        &-title {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+        }
 
-      &-second {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        
-
+        &-author {
+          display: flex;
+          align-items: center;
+        }
       }
     }
+
+    .card-second-video {
+      img {
+        width: 100%;
+        height: auto;
   }
 }
-
+}
+}
