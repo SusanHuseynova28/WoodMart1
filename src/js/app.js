@@ -61,84 +61,62 @@ document.addEventListener('click', function(event) {
     }
 });
 
-// 
 
 
+// add and delete buttons
+document.addEventListener('DOMContentLoaded', function () {
+    document.querySelectorAll('.add-btn').forEach(function (button) {
+      button.addEventListener('click', function () {
+        const item = button.closest('.item');
+        const newItem = item.cloneNode(true);
 
-// API
-document.addEventListener('DOMContentLoaded', function() {
-    const shopLink = document.getElementById('shopLink');
-    const dropdownMenu = document.getElementById('dropdownMenu');
-    const sidebar = document.getElementById('sidebar');
+        
+        newItem.querySelector('.add-btn').remove();
 
-    shopLink.addEventListener('click', function(event) {
-        event.preventDefault();
-        sidebar.innerHTML = dropdownMenu.innerHTML;
-        sidebar.classList.toggle('active');
+      
+        document.querySelector('.added-items').appendChild(newItem);
+
+        newItem.querySelector('.delete-btn').addEventListener('click', function () {
+          newItem.remove();
+        });
+      });
     });
 
-   
-    document.addEventListener('click', function(event) {
-        if (!sidebar.contains(event.target) && event.target !== shopLink) {
-            sidebar.classList.remove('active');
+    
+    document.querySelectorAll('.delete-btn').forEach(function (button) {
+      button.addEventListener('click', function () {
+        const item = button.closest('.item');
+
+    
+        if (item.parentNode.classList.contains('added-items')) {
+          item.remove();
         }
+      });
     });
-});
+  });
 
-let cart = [];
-
-document.addEventListener('DOMContentLoaded', () => {
-    fetchProducts();
-});
+  
+const cardsContainer = document.querySelector('.cards');
 
 
-function fetchProducts() {
-    fetch('http://localhost:3001/products')
-        .then(response => response.json())
-        .then(data => {
-            const products = data.products;
-            renderProducts(products);
-        })
-        .catch(error => console.error('Error fetching products:', error));
-}
-
-
-function renderProducts(products) {
-    const mainCardSection = document.querySelector('.main-card-image');
-
-    products.forEach(product => {
-        const cardWordSection = document.createElement('div');
-        cardWordSection.classList.add('card-word-section');
-        cardWordSection.innerHTML = `
-            <div class="card1">
-                <div class="image-container">
-                    <img src="${product.image}" alt="${product.name}" class="main-image">
-                    <img src="${product.hoverImage}" alt="${product.name} Hover" class="hover-image">
-                    <div class="overlay">
-                        <div class="icons">
-                            <div class="icon search"></div>
-                            <div class="icon heart"></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="details">
-                    <h3 class="h3">${product.name}</h3>
-                    <div class="rating">
-                        <span class="star-card">★★★★☆</span>
-                    </div>
-                    <div class="price">
-                        <span class="original-price">$98.00</span>
-                        <span class="discounted-price">$${product.price.toFixed(2)}</span>
-                    </div>
-                    <button class="select-options" onclick="addToCart(${product.id})">Add to cart</button>
-                </div>
-            </div>
-        `;
-        mainCardSection.appendChild(cardWordSection);
+fetch('http://localhost:3001/cards')
+  .then(response => response.json())
+  .then(data => {
+    // Loop through each card data object
+    data.cards.forEach(card => {
+      // Create card HTML structure
+      const cardHTML = `
+        <div class="card">
+          <img src="${card.image}" alt="">
+          <div class="overlay">
+            <i class="fa-regular fa-heart"></i><span class="count">${card.likes}</span>
+            <i class="fa-regular fa-comment"></i><span class="count">${card.comments}</span>
+          </div>
+        </div>
+      `;
+      
+      // Append card HTML to cards container
+      cardsContainer.innerHTML += cardHTML;
     });
-}
-
-renderProducts(products);
-fetchProducts();
-
-
+  })
+  .catch(error => console.error('Error fetching data:', error));

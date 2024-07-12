@@ -1,33 +1,34 @@
 {
-    "products": [
-      {
-        "id": 1,
-        "name": "Anthirum King",
-        "price": 88.00,
-        "image": "https://woodmart.xtemos.com/plants/wp-content/uploads/sites/12/2023/05/w-indoor-plants-small-5-0.jpg",
-        "hoverImage": "https://woodmart.xtemos.com/plants/wp-content/uploads/sites/12/2023/05/w-indoor-plants-small-5-1-430x491.jpg.webp"
-      },
-      {
-        "id": 2,
-        "name": "Bromeliad Vriesea",
-        "price": 88.00,
-        "image": "https://woodmart.xtemos.com/plants/wp-content/uploads/sites/12/2023/05/w-indoor-plants-small-4-4-430x491.jpg",
-        "hoverImage": "https://woodmart.xtemos.com/plants/wp-content/uploads/sites/12/2023/05/w-indoor-plants-small-5-1-430x491.jpg.webp"
-      },
-      {
-        "id": 3,
-        "name": "Bromeliad Antonio Pink",
-        "price": 88.00,
-        "image": "https://woodmart.xtemos.com/plants/wp-content/uploads/sites/12/2023/05/w-indoor-plants-small-12-1-430x491.jpg.webp",
-        "hoverImage": "https://woodmart.xtemos.com/plants/wp-content/uploads/sites/12/2023/05/w-indoor-plants-small-5-1-430x491.jpg.webp"
-      },
-      {
-        "id": 4,
-        "name": "Corkscrew Croton",
-        "price": 88.00,
-        "image": "https://woodmart.xtemos.com/plants/wp-content/uploads/sites/12/2023/05/w-indoor-plants-medium-4-1-430x491.jpg.webp",
-        "hoverImage": "https://woodmart.xtemos.com/plants/wp-content/uploads/sites/12/2023/05/w-indoor-plants-small-5-1-430x491.jpg.webp"
-      }
-    ]
-  }
-  
+  "cards": [
+    {
+      "image": "https://woodmart.xtemos.com/plants/wp-content/uploads/sites/12/2023/05/w-ps-instagram-1.jpg.webp",
+      "likes": 2932,
+      "comments": 750
+    },
+    {
+      "image": "https://woodmart.xtemos.com/plants/wp-content/uploads/sites/12/2023/05/w-ps-instagram-2.jpg.webp",
+      "likes": 9312,
+      "comments": 838
+    },
+    {
+      "image": "https://woodmart.xtemos.com/plants/wp-content/uploads/sites/12/2023/05/w-ps-instagram-3.jpg.webp",
+      "likes": 7778,
+      "comments": 775
+    },
+    {
+      "image": "https://woodmart.xtemos.com/plants/wp-content/uploads/sites/12/2023/05/w-ps-instagram-4.jpg.webp",
+      "likes": 6065,
+      "comments": 118
+    },
+    {
+      "image": "https://woodmart.xtemos.com/plants/wp-content/uploads/sites/12/2023/05/w-ps-instagram-5.jpg.webp",
+      "likes": 5569,
+      "comments": 384
+    },
+    {
+      "image": "https://woodmart.xtemos.com/plants/wp-content/uploads/sites/12/2023/05/w-ps-instagram-6.jpg.webp",
+      "likes": 7256,
+      "comments": 103
+    }
+  ]
+}

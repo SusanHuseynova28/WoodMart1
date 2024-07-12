@@ -251,4 +251,354 @@
   }
   }
   }
+  .product-card {
+    display: flex;
+    width: max;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    gap: 10px;
+    height: 550px;
+    justify-content: space-between;
   
+    .product-image-container {
+      position: relative;
+      width: 100%;
+      height: 17rem;
+  
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: opacity 1s ease;
+  
+        &.hover-image {
+          position: absolute;
+          top: 0;
+          left: 0;
+          opacity: 0;
+        }
+      }
+  
+      .icon-box {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        display: flex;
+        flex-direction: column;
+        background: white;
+        padding: 5px;
+        display: none;
+        width: 50px;
+        height: 80px;
+        gap: 0.7rem;
+  
+        i {
+          margin: 5px 0;
+          color: black;
+          font-size: 20px;
+        }
+      }
+  
+      .discount-badge {
+        position: absolute;
+        top: 10px;
+        background: #fff;
+        padding: 2px 6px;
+        font-size: 12px;
+        font-weight: bold;
+        color: black;
+        width: 3.7rem;
+        height: 1.3rem;
+      }
+  
+      .discount-new {
+        position: absolute;
+        top: 45px;
+        background: #fff;
+        padding: 2px 6px;
+        font-size: 12px;
+        font-weight: bold;
+        color: black;
+        width: 3.7rem;
+        height: 1.3rem;
+      }
+  
+      &:hover {
+        .hover-image {
+          opacity: 1;
+        }
+  
+        .main-image {
+          opacity: 0;
+        }
+  
+        .icon-box {
+          display: flex;
+        }
+      }
+    }
+  
+    .product-info {
+      margin-top: 15px;
+  
+      .color-options {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 5px;
+  
+        .color {
+          width: 15px;
+          height: 15px;
+          border-radius: 50%;
+          margin: 0 3px;
+  
+          &.black {
+            background: #000;
+          }
+  
+          &.white {
+            background: #fff;
+            border: 1px solid #ccc;
+          }
+  
+          &.beige {
+            background: #f5deb3;
+          }
+  
+          &.pink {
+            background: rgb(253, 239, 241);
+          }
+        }
+      }
+  
+      h2 {
+        font-size: 15px;
+        color: black;
+        margin: 5px 0;
+      }
+  
+      .rating {
+        color: #FFD700;
+        margin-bottom: 5px;
+      }
+  
+      .price {
+        margin-bottom: 10px;
+  
+        .original-price {
+          text-decoration: line-through;
+          color: #999;
+          margin-right: 5px;
+        }
+  
+        .discounted-price {
+          color: black;
+          font-weight: bold;
+        }
+      }
+  
+      button {
+        padding: 10px 15px;
+        background: rgb(94, 104, 33);
+        color: white;
+        border: none;
+        cursor: pointer;
+        transition: 1s ease;
+  
+        &:hover {
+          background: rgb(78, 90, 3);
+    }
+  }
+  }
+  }
+  // Base styles for product items
+.item {
+  flex: 1 1 calc(25% - 20px); 
+  padding: 10px;
+  position: relative;
+  overflow: hidden; 
+  padding-left: 2rem;
+  padding-right: 2rem;
+  
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .img-container {
+      position: relative;
+      width: 100%;
+      height: 370px;
+     margin-top: 17rem;
+     
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: opacity 0.5s ease;
+
+        &.hover-img {
+          position: absolute;
+          top: 0;
+          left: 0;
+          opacity: 0;
+        }
+      }
+
+      .icons {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        display: flex;
+        flex-direction: column;
+        background: white;
+        padding: 5px;
+        width: 50px;
+        height: 80px;
+        gap: 0.7rem;
+        display: none;
+
+        i {
+          margin: 5px 0;
+          color: black;
+          font-size: 20px;
+          text-align: center;
+        }
+      }
+
+      .badge {
+        position: absolute;
+        top: 18px;
+        background: #fff;
+        padding: 5px 10px;
+        font-size: 12px;
+        font-weight: bold;
+        color: black;
+      }
+
+      &:hover {
+        .hover-img {
+          opacity: 1;
+        }
+
+        .main-img {
+          opacity: 0;
+        }
+
+        .icons {
+          display: flex;
+        }
+      }
+    }
+
+    .info {
+      text-align: center;
+      margin-top: 0.8rem;
+
+      .colors {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 5px;
+
+        .color {
+          width: 15px;
+          height: 15px;
+          border-radius: 50%;
+          margin: 0 3px;
+
+          &.black {
+            background: #000;
+          }
+
+          &.white {
+            background: #fff;
+            border: 1px solid #ccc;
+          }
+
+          &.beige {
+            background: #f5deb3;
+          }
+
+          &.pink {
+            background: rgb(253, 239, 241);
+          }
+        }
+      }
+
+      h2 {
+        font-size: 15px;
+        color: black;
+        margin: 5px 0;
+      }
+
+      .rating {
+        color: #FFD700;
+        margin-bottom: 5px;
+      }
+
+      .price {
+        margin-bottom: 10px;
+
+        .discounted {
+          color: black;
+          font-weight: bold;
+        }
+      }
+
+      .select-btn {
+        padding: 10px 15px;
+        background: rgb(94, 104, 33);
+        color: white;
+        border: none;
+        cursor: pointer;
+        transition: background 0.3s ease;
+
+        &:hover {
+          background: rgb(78, 90, 3);
+        }
+      }
+    }
+
+    .btn-group {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      margin-top: 10px;
+
+      button {
+        flex: 1 1 48%;
+        padding: 7px;
+        background: #f0f0f0;
+        border: 1px solid #ccc;
+        cursor: pointer;
+        transition: background 0.3s ease;
+
+        &:hover {
+          background: #ddd;
+        }
+
+        &.delete-btn {
+          background: #f0f0f0;
+          border: 1px solid #ccc;
+
+          &:hover {
+            background: #ddd;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+.items-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  background-color: transparent; 
+}
