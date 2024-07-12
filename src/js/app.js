@@ -140,3 +140,5 @@ function renderProducts(products) {
 
 renderProducts(products);
 fetchProducts();
+
+

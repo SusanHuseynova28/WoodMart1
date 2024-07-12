@@ -17,8 +17,8 @@ body {
 }
 .explore-container {
   display: flex;
-  flex-direction: column;
   gap: 2rem;
+  flex-direction: column;
   padding: 3rem;
 }
 .explore-container .flower-icon, .explore-container .plant-icon, .explore-container .plant-second-icon {
@@ -62,8 +62,8 @@ body {
 }
 .explore .explore-content .explore-cards .explore-card-author {
   display: flex;
-  gap: 1rem;
   align-items: center;
+  gap: 1rem;
   margin-top: 0.4rem;
 }
 .explore .explore-content .card-second-video {
@@ -156,114 +156,145 @@ body {
   margin-right: 0;
 }
 
-.main-card-image {
+.product-card {
   display: flex;
-  justify-content: space-around;
-  align-items: center;
-  padding: 1rem;
-  margin-top: 15rem;
-}
-.main-card-image .card1 {
-  overflow: hidden;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  width: 300px;
+  width: max;
+  padding: 2rem;
   text-align: center;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  gap: 10px;
+  height: 550px;
+  justify-content: space-between;
+  margin-top: 18%;
+  width: 20rem;
 }
-.main-card-image .card1 .image-container {
+.product-card .product-image-container {
   position: relative;
   width: 100%;
-  overflow: hidden;
+  height: 17rem;
 }
-.main-card-image .card1 .image-container img {
+.product-card .product-image-container img {
   width: 100%;
-  transition: opacity 0.3s ease-in-out;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transition: opacity 1s ease;
 }
-.main-card-image .card1 .image-container .hover-image {
+.product-card .product-image-container img.hover-image {
   position: absolute;
   top: 0;
   left: 0;
   opacity: 0;
 }
-.main-card-image .card1 .image-container:hover .hover-image {
+.product-card .product-image-container .icon-box {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: flex;
+  flex-direction: column;
+  background: white;
+  padding: 5px;
+  display: none;
+  width: 50px;
+  height: 80px;
+  gap: 0.7rem;
+}
+.product-card .product-image-container .icon-box i {
+  margin: 5px 0;
+  color: black;
+  font-size: 20px;
+}
+.product-card .product-image-container .discount-badge {
+  position: absolute;
+  top: 10px;
+  background: #fff;
+  padding: 2px 6px;
+  font-size: 12px;
+  font-weight: bold;
+  color: black;
+  width: 3.7rem;
+  height: 1.3rem;
+}
+.product-card .product-image-container .discount-new {
+  position: absolute;
+  top: 45px;
+  background: #fff;
+  padding: 2px 6px;
+  font-size: 12px;
+  font-weight: bold;
+  color: black;
+  width: 3.7rem;
+  height: 1.3rem;
+}
+.product-card .product-image-container:hover .hover-image {
   opacity: 1;
 }
-.main-card-image .card1 .image-container:hover .main-image {
+.product-card .product-image-container:hover .main-image {
   opacity: 0;
 }
-.main-card-image .card1 .image-container .icons {
-  position: absolute;
-  bottom: 10px; /* Adjust to your preference */
-  left: 50%;
-  transform: translateX(-50%);
+.product-card .product-image-container:hover .icon-box {
   display: flex;
-  flex-direction: column; /* Ensure icons are stacked vertically */
-  gap: 10px;
 }
-.main-card-image .card1 .image-container .icons .icon {
-  width: 30px;
-  height: 30px;
-  color: #000;
-  cursor: pointer;
-  transition: background-color 0.3s;
+.product-card .product-info {
+  margin-top: 15px;
 }
-.main-card-image .card1 .image-container .icons .icon.search {
-  background: url("https://i.pinimg.com/564x/a6/04/ab/a604ab7a709bf8a7a671294567cc9010.jpg") no-repeat center center/contain;
+.product-card .product-info .color-options {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5px;
 }
-.main-card-image .card1 .image-container .icons .icon.heart {
-  background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtmmH46yqC2VFfX9PdU2BTBNMxOrbdWjw2Fw&s") no-repeat center center/contain;
+.product-card .product-info .color-options .color {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  margin: 0 3px;
 }
-.main-card-image .card1 .image-container .icons .icon:hover {
-  transition: background-color 0.3s;
-  background-color: rgba(0, 0, 0, 0.1); /* Example background color change */
+.product-card .product-info .color-options .color.black {
+  background: #000;
 }
-.main-card-image .details {
-  padding-left: 3rem;
+.product-card .product-info .color-options .color.white {
+  background: #fff;
+  border: 1px solid #ccc;
 }
-.main-card-image .details h3 {
-  padding-left: 1rem;
-  font-size: 1.3rem;
-  margin-top: 0.5rem;
+.product-card .product-info .color-options .color.beige {
+  background: #f5deb3;
 }
-.main-card-image .details .h4 {
-  padding-left: 0.8rem;
-  font-size: 1.3rem;
-  margin-top: 0.5rem;
+.product-card .product-info .color-options .color.pink {
+  background: rgb(253, 239, 241);
 }
-.main-card-image .details .rating {
-  margin: 10px 0;
-  color: #ffa500;
+.product-card .product-info h2 {
+  font-size: 15px;
+  color: black;
+  margin: 5px 0;
 }
-.main-card-image .details .rating .star-card {
-  padding-left: 3rem;
-  font-size: 1.5rem;
+.product-card .product-info .rating {
+  color: #FFD700;
+  margin-bottom: 5px;
 }
-.main-card-image .details .price {
-  padding-left: 2.3rem;
-  font-size: 1.2rem;
+.product-card .product-info .price {
+  margin-bottom: 10px;
 }
-.main-card-image .details .price .original-price {
+.product-card .product-info .price .original-price {
   text-decoration: line-through;
-  color: #888;
-  margin-right: 10px;
+  color: #999;
+  margin-right: 5px;
 }
-.main-card-image .details .price .discounted-price {
-  color: #000;
+.product-card .product-info .price .discounted-price {
+  color: black;
+  font-weight: bold;
 }
-.main-card-image .details .select-options {
-  background-color: rgb(94, 104, 33);
-  margin-left: 2.5rem;
-  border: none;
-  margin-top: 0.5rem;
-  width: 7rem;
-  height: 2.5rem;
-  font-size: 0.8rem;
-  font-weight: 500;
+.product-card .product-info button {
+  padding: 10px 15px;
+  background: rgb(94, 104, 33);
   color: white;
+  border: none;
   cursor: pointer;
-  transition: background-color 0.3s;
+  transition: 1s ease;
 }
-.main-card-image .details .select-options:hover {
-  background-color: #3b4115;
+.product-card .product-info button:hover {
+  background: rgb(78, 90, 3);
 }
 
 .site-header {

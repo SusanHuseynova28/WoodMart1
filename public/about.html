@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="../src/scss/styles.css">
+</head>
+
+<body>
+
+    <header class="site-header">
+        <div class="site-header-top">
+            <nav class="site-header-nav">
+                <ul>
+                    <li class="dropdown" id="shopDropdown">
+                        <a href="shop.html" id="shopLink">Shop<i class="fa-solid fa-angle-down"></i></a>
+                        <div class="dropdown-menu" id="dropdownMenu">
+                            <div class="dropdown-category">
+                                <img src="https://woodmart.xtemos.com/plants/wp-content/uploads/sites/12/2023/05/w-ps-categorie-plants.jpg.webp"
+                                    alt="Plants">
+                                <p>Plants</p>
+                                <span>25 products</span>
+                            </div>
+                            <div class="dropdown-category">
+                                <img src="https://woodmart.xtemos.com/plants/wp-content/uploads/sites/12/2023/05/w-ps-categorie-planters.jpg.webp"
+                                    alt="Planters">
+                                <p>Planters</p>
+                                <span>12 products</span>
+                            </div>
+                            <div class="dropdown-category">
+                                <img src="https://woodmart.xtemos.com/plants/wp-content/uploads/sites/12/2023/05/w-ps-categorie-plant-care.jpg.webp"
+                                    alt="Plant care">
+                                <p>Plant care</p>
+                                <span>12 products</span>
+                            </div>
+                            <div class="dropdown-category">
+                                <img src="https://woodmart.xtemos.com/plants/wp-content/uploads/sites/12/2023/05/w-ps-categorie-pet-friendly.jpg.webp"
+                                    alt="Pet friendly">
+                                <p>Pet friendly</p>
+                                <span>12 products</span>
+                            </div>
+                            <div class="dropdown-category">
+                                <img src="https://woodmart.xtemos.com/plants/wp-content/uploads/sites/12/2023/05/w-ps-categorie-gift-ideas.jpg.webp"
+                                    alt="Gift ideas">
+                                <p>Gift ideas</p>
+                                <span>12 products</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="care.html">Care library</a></li>
+                    <li><a href="about.html">About us</a></li>
+                    <li><a href="contact.html">Contact us</a></li>
+                </ul>
+            </nav>
+            <div class="site-header-logo">
+                <img src="https://woodmart.xtemos.com/plants/wp-content/uploads/sites/12/2023/05/woodmart-plant-store-logo.svg"
+                    alt="Woodmart Logo">
+            </div>
+            <div class="site-header-actions">
+                <a href="#">Login / Register</a>
+                <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+                <a href="#"><i class="fa-regular fa-heart"></i> 0</a>
+                <a href="#" id="cartIcon"><i class="fa-solid fa-bag-shopping"></i> 0 / $0.00</a>
+            </div>
+        </div>
+        <hr>
+    </header>
+    <div class="sidebar" id="sidebar">
+        <div class="sidebar-title">
+            <p>Shopping cart</p>
+            <button class="sidebar-close" id="sidebarCloseBtn"><i class="fa-solid fa-xmark"></i>Close</button>
+
+        </div>
+    </div>
+    <footer class="main-footer">
+        <hr>
+        <div class="footer-left">
+            <div class="newsletter-section">
+                <img src="https://woodmart.xtemos.com/plants/wp-content/uploads/sites/12/2023/05/woodmart-plant-store-logo.svg"
+                    alt="Woodmart Logo" class="footer-logo">
+                <h2>Join our newsletter to stay up to date on features and releases.</h2>
+                <div class="subscription-container">
+                    <input type="email" placeholder="Your email address">
+                    <button type="submit">Sign up</button>
+                </div>
+                <p class="privacy-policy">By subscribing you agree to our Privacy Policy and provide consent to receive
+                    updates from our company.</p>
+            </div>
+            <div class="social-links">
+                <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-xing"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+        <div class="footer-right">
+            <div class="shop-links">
+                <div class="footer-title">Shop</div>
+                <ul>
+                    <li><a href="#">Plants</a></li>
+                    <li><a href="#">Planters</a></li>
+                    <li><a href="#">Plant care</a></li>
+                    <li><a href="#">Gift ideas</a></li>
+                    <li><a href="#">Pet friendly</a></li>
+                </ul>
+            </div>
+            <div class="useful-links">
+                <div class="footer-title">Useful links</div>
+                <ul>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Care library</a></li>
+                    <li><a href="#">Contact us</a></li>
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">Delivery & Return</a></li>
+                </ul>
+            </div>
+            <div class="contact-info">
+                <div class="footer-title">Contacts</div>
+                <div class="email">wood.plants@gmail.com</div>
+                <div class="phone">(064) 332-1233</div>
+                <div class="address">20 Auburn Ave NE, Atlanta, USA</div>
+            </div>
+        </div>
+        <hr>
+    </footer>
+    <div class="footer-bottom">
+        <p>Based on WoodMart theme 2024 WooCommerce Themes.</p>
+        <div class="payment-methods">
+            <img src="https://woodmart.xtemos.com/plants/wp-content/uploads/sites/12/2023/05/payments.png"
+                alt="Payment Methods">
+        </div>
+    </div>
+    <script src="../src/js/app.js"></script>
+</body>
+</html>
