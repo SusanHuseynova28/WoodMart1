@@ -1,11 +1,13 @@
 @forward "../scss/base/reset";
-@forward "../scss/components/buttons";
 @forward "../scss/components/cards";
 @forward "../scss/layout/header";
 @forward "../scss/layout/sidebar";
 @forward "../scss/layout/grid";
 @forward "../scss/layout/footer";
 @forward "../scss/pages/shop";
+@forward "../scss/pages/about";
+@forward "../scss/pages/care";
+@forward "../scss/pages/contact";
 @forward "../scss/utils/mixins";
 @forward "../scss/utils/variables";
 @forward "../scss/vendors/bootstrap";

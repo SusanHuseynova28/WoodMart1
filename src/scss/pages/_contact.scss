@@ -1,0 +1,215 @@
+.contact-title {
+    font-weight: 500;
+    font-size: 28px;
+    color: rgb(94, 104, 33);
+    padding: 1rem;
+  }
+  
+  .care {
+    padding: 1rem;
+  
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+  
+      .care-title,
+      .jump-container {
+        width: 50%;
+      }
+  
+      .jump-container {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+  
+        .jump-box {
+          width: 100%;
+          padding: 15px 20px;
+          background-color: rgba(94, 104, 33, 0.1);
+          display: flex;
+          align-items: center;
+  
+          .jump-title {
+            color: black;
+            font-size: 1.2rem;
+            margin-right: 10px;
+          }
+  
+          .jump-links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 5px;
+  
+            .jump-link {
+              font-size: 1rem;
+              text-decoration: none;
+              color: gray;
+  
+              &.green {
+                color: #5e6821;
+              }
+  
+              &.gray {
+                color: gray;
+              }
+  
+              &:hover {
+                text-decoration: underline;
+              }
+            }
+          }
+        }
+  
+        .green-line {
+          width: 90%;
+          height: 2px;
+          background-color: #5e6821;
+          margin-top: 30px;
+          margin-left: 9.7%;
+        }
+  
+        .plant-list {
+          width: 100%;
+          padding: 1rem;
+  
+          .plant-item {
+            display: flex;
+            align-items: center;
+            padding: 1rem 0;
+            border-bottom: 1px solid #e7e5d9;
+  
+            &:last-child {
+              border-bottom: none;
+            }
+  
+            .plant-icon {
+              width: 3rem;
+              height: 4rem;
+              background-color: #5f6921;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              margin-left: -1rem;
+              color: #fff;
+              font-size: 2rem;
+              font-weight: bold;
+              margin-right: 2rem;
+            }
+  
+            .plant-name {
+              font-size: 2rem;
+              font-weight: 500;
+              color: black;
+  
+              &:hover {
+                color: #5e6821;
+              }
+            }
+  
+            .plant-name-m {
+              font-size: 2rem;
+              font-weight: 500;
+              color: black;
+              margin-left: 3.19rem;
+  
+              &:hover {
+                color: #5e6821;
+              }
+            }
+          }
+        }
+      }
+  
+      .care-title {
+        h1 {
+          font-size: 68px;
+          margin-bottom: 1rem;
+        }
+  
+        p {
+          font-size: 15px;
+          color: gray;
+          font-weight: bold;
+        }
+      }
+  
+      .jump-container-img {
+        position: relative;
+        width: 50%;
+        height: 50%;
+        overflow: hidden;
+  
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          transition: transform 0.3s ease;
+  
+          &:hover {
+            transform: scale(1.1);
+          }
+        }
+      }
+  
+      .message-button {
+        margin: 1.5rem 0 1rem;
+        background-color: rgb(94, 104, 33);
+        color: white;
+        border: none;
+        cursor: pointer;
+        width: 170px;
+        height: 40px;
+      }
+    }
+  }
+  
+  .contact-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 3rem 4rem 2rem 4rem;
+  
+    .left-section {
+      h1 {
+        font-size: 48px;
+        font-weight: bold;
+      }
+    }
+  
+    .right-section {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      width: 60%;
+  
+      .contact-details {
+        flex-grow: 1;
+  
+        .contact-detail {
+          display: flex;
+          align-items: flex-start;
+          margin-bottom: 3rem;
+          margin-left: -10rem;
+  
+          strong {
+            width: 10rem;
+            font-weight: bold;
+          }
+  
+          p {
+            margin: 0;
+            font-size: 1rem;
+            color: #666;
+          }
+        }
+      }
+  
+      .contact-person {
+        p {
+          font-size: 1.1rem;
+          color: black;
+        }
+      }
+    }
+  }
+  

@@ -49,7 +49,7 @@
                 margin-right: 22px;
                 a {
                     font-size: 18px;
-                    transition: color 0.3s;
+                    transition: color 0.20s;
                     text-decoration: none;
                     color: $a-hover-color;
                     &:hover {
@@ -69,8 +69,8 @@
                         z-index: 50;
                         gap: 90px;
                         position: absolute;
-                        width: 1350px;
-                        height: 170px;
+                        width: 90rem;
+                        height: 10rem;
             
                         .dropdown-category {
                             @include Flex($direction: column, $items: center);
