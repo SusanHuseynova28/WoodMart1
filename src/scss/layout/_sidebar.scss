@@ -11,8 +11,7 @@
     transition: right 0.3s ease;
     z-index: 100;
     .sidebar-title{
-        display: flex;
-        justify-content: space-between;
+        @include Flex ($justify:space-between);
         padding: 1rem;
         #sidebarCloseBtn{
             background-color: $hover-word-white;

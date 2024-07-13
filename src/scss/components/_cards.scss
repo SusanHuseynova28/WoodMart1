@@ -414,9 +414,9 @@
   }
   }
   }
-  // Base styles for product items
+  
 .item {
-  flex: 1 1 calc(25% - 20px); 
+  flex: calc(25% - 20px); 
   padding: 10px;
   position: relative;
   overflow: hidden; 
@@ -432,7 +432,7 @@
     .img-container {
       position: relative;
       width: 100%;
-      height: 370px;
+      height: 350px;
      margin-top: 17rem;
      
 
@@ -595,10 +595,145 @@
   }
 }
 
-
 .items-container {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
   background-color: transparent; 
+
+}
+.lib-heading {
+  font-weight: 500;
+  font-size: 28px;
+  color: rgb(94, 104, 33);
+  padding-left: 1.5rem;
+  
+}
+
+.lib-section {
+  padding: 1rem;
+
+  .lib-wrap {
+    display: flex;
+    flex-wrap: wrap;
+
+    .jump-area,
+    .lib-info {
+      width: 45%;
+      margin-top: 1rem;
+    }
+
+    .jump-area {
+      @include Flex ($direction:column,$items:flex-start);
+    
+      .jump-block {
+        background-color: rgba(94, 104, 33, 0.1);
+       @include Flex ($items:center);
+       width: 100%;
+        padding: 18px 24px;
+      
+        .jump-label {
+          font-size: 1.5rem;
+          margin-right: 12px;
+          color: black;
+          
+        }
+
+        .jump-list {
+          @include Flex($gap:5px,$wrap:flex-wrap);
+  
+          .jump-item {
+            text-decoration: none;
+            color: $gray-color-word;
+            font-size: 1.2rem;
+            text-decoration: none;
+            color: $gray-color-word;
+
+            &.green {
+              color: $explore-color;
+            }
+
+            &.gray {
+              color: $gray-color-word;
+            }
+
+            &:hover {
+              text-decoration: underline;
+            }
+          }
+        }
+      }
+
+      .separator {
+        background-color: $explore-color;
+        margin-top: 32px;
+        margin-left: 9.4%;
+        width: 90%;
+        height: 2px;
+       
+      }
+
+      .plant-collection {
+        padding: 1rem;
+        width: 100%;
+        
+
+        .plant-block {
+          @include Flex ($items:center);
+          padding: 1rem 0;
+          border-bottom: 1px solid #e7e5d9;
+
+          &:last-child {
+            border-bottom: none;
+          }
+
+          .plant-label {
+            @include Flex ($justify:center,$items:center);
+            width: 3rem;
+            height: 4rem;
+            background-color: $explore-color;
+            font-weight: bold;
+            margin-right: 2rem;
+            margin-left: -1rem;
+            color: $sidebar-color;
+            font-size: 2rem;
+          }
+
+          .plant-title {
+            font-size: 2rem;
+            font-weight: 600;
+            color: black;
+
+            &:hover {
+              color: $explore-color;
+            }
+          }
+          .plant-alt {
+            font-size: 2rem;
+            font-weight: 600;
+            color: black;
+            margin-left: 4rem;
+
+            &:hover {
+              color: $explore-color;
+            }
+          }
+        }
+      }
+    }
+
+    .lib-info {
+      h1 {
+        margin-bottom: 1rem;
+        font-size: 70px;
+        
+      }
+
+      p {
+        font-size: 17px;
+        color: $gray-color-word;
+        font-weight: bold;
+      }
+    }
+  }
 }

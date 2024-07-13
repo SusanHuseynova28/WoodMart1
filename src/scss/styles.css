@@ -439,7 +439,7 @@ body {
 }
 
 .item {
-  flex: 1 1 calc(25% - 20px);
+  flex: calc(25% - 20px);
   padding: 10px;
   position: relative;
   overflow: hidden;
@@ -454,7 +454,7 @@ body {
 .item .container .img-container {
   position: relative;
   width: 100%;
-  height: 370px;
+  height: 350px;
   margin-top: 17rem;
 }
 .item .container .img-container img {
@@ -592,6 +592,123 @@ body {
   flex-wrap: wrap;
   gap: 20px;
   background-color: transparent;
+}
+
+.lib-heading {
+  font-weight: 500;
+  font-size: 28px;
+  color: rgb(94, 104, 33);
+  padding-left: 1.5rem;
+}
+
+.lib-section {
+  padding: 1rem;
+}
+.lib-section .lib-wrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+.lib-section .lib-wrap .jump-area,
+.lib-section .lib-wrap .lib-info {
+  width: 45%;
+  margin-top: 1rem;
+}
+.lib-section .lib-wrap .jump-area {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.lib-section .lib-wrap .jump-area .jump-block {
+  background-color: rgba(94, 104, 33, 0.1);
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 18px 24px;
+}
+.lib-section .lib-wrap .jump-area .jump-block .jump-label {
+  font-size: 1.5rem;
+  margin-right: 12px;
+  color: black;
+}
+.lib-section .lib-wrap .jump-area .jump-block .jump-list {
+  display: flex;
+  flex-wrap: flex-wrap;
+  gap: 5px;
+}
+.lib-section .lib-wrap .jump-area .jump-block .jump-list .jump-item {
+  text-decoration: none;
+  color: gray;
+  font-size: 1.2rem;
+  text-decoration: none;
+  color: gray;
+}
+.lib-section .lib-wrap .jump-area .jump-block .jump-list .jump-item.green {
+  color: #5f6921;
+}
+.lib-section .lib-wrap .jump-area .jump-block .jump-list .jump-item.gray {
+  color: gray;
+}
+.lib-section .lib-wrap .jump-area .jump-block .jump-list .jump-item:hover {
+  text-decoration: underline;
+}
+.lib-section .lib-wrap .jump-area .separator {
+  background-color: #5f6921;
+  margin-top: 32px;
+  margin-left: 9.4%;
+  width: 90%;
+  height: 2px;
+}
+.lib-section .lib-wrap .jump-area .plant-collection {
+  padding: 1rem;
+  width: 100%;
+}
+.lib-section .lib-wrap .jump-area .plant-collection .plant-block {
+  display: flex;
+  align-items: center;
+  padding: 1rem 0;
+  border-bottom: 1px solid #e7e5d9;
+}
+.lib-section .lib-wrap .jump-area .plant-collection .plant-block:last-child {
+  border-bottom: none;
+}
+.lib-section .lib-wrap .jump-area .plant-collection .plant-block .plant-label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 3rem;
+  height: 4rem;
+  background-color: #5f6921;
+  font-weight: bold;
+  margin-right: 2rem;
+  margin-left: -1rem;
+  color: #fff;
+  font-size: 2rem;
+}
+.lib-section .lib-wrap .jump-area .plant-collection .plant-block .plant-title {
+  font-size: 2rem;
+  font-weight: 600;
+  color: black;
+}
+.lib-section .lib-wrap .jump-area .plant-collection .plant-block .plant-title:hover {
+  color: #5f6921;
+}
+.lib-section .lib-wrap .jump-area .plant-collection .plant-block .plant-alt {
+  font-size: 2rem;
+  font-weight: 600;
+  color: black;
+  margin-left: 4rem;
+}
+.lib-section .lib-wrap .jump-area .plant-collection .plant-block .plant-alt:hover {
+  color: #5f6921;
+}
+.lib-section .lib-wrap .lib-info h1 {
+  margin-bottom: 1rem;
+  font-size: 70px;
+}
+.lib-section .lib-wrap .lib-info p {
+  font-size: 17px;
+  color: gray;
+  font-weight: bold;
 }
 
 .site-header {
