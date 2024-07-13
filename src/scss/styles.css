@@ -1506,7 +1506,7 @@ hr {
   margin-top: 3rem;
 }
 
-.separator1 {
+.separator {
   margin: 0 auto;
   background-color: #5f6921;
   border: 1px solid #5f6921;
@@ -1556,7 +1556,6 @@ hr {
   width: 450px;
   height: 600px;
   overflow: hidden;
-  transition: transform 0.3s;
   cursor: pointer;
 }
 .timeline-main .profile-section .profile-image {
@@ -1595,7 +1594,7 @@ hr {
   width: 2.5rem;
   height: 2.5rem;
   border-radius: 50%;
-  background: rgba(255, 255, 255, 0.3);
+  background: #555;
   color: #fff;
   display: flex;
   justify-content: center;
@@ -1725,15 +1724,16 @@ hr {
   font-weight: 500;
   font-size: 28px;
   color: rgb(94, 104, 33);
-  padding: 1rem;
+  padding: 2rem;
 }
 
 .care {
-  padding: 1rem;
+  padding: 2rem;
 }
 .care .container {
   display: flex;
   flex-wrap: wrap;
+  gap: 4rem;
 }
 .care .container .care-title,
 .care .container .jump-container {
@@ -1836,8 +1836,8 @@ hr {
 }
 .care .container .jump-container-img {
   position: relative;
-  width: 50%;
-  height: 50%;
+  width: 40%;
+  height: 40%;
   overflow: hidden;
 }
 .care .container .jump-container-img img {
@@ -1845,10 +1845,6 @@ hr {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  transition: transform 0.3s ease;
-}
-.care .container .jump-container-img img:hover {
-  transform: scale(1.1);
 }
 .care .container .message-button {
   margin: 1.5rem 0 1rem;
@@ -1856,45 +1852,46 @@ hr {
   color: white;
   border: none;
   cursor: pointer;
-  width: 170px;
+  width: 150px;
   height: 40px;
 }
 
-.contact-info {
+.contact-info1 {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  margin: 3rem 4rem 2rem 4rem;
+  margin: 3rem;
 }
-.contact-info .left-section h1 {
+.contact-info1 .left-section h1 {
   font-size: 48px;
   font-weight: bold;
 }
-.contact-info .right-section {
+.contact-info1 .right-section {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
   width: 60%;
 }
-.contact-info .right-section .contact-details {
+.contact-info1 .right-section .contact-details {
   flex-grow: 1;
+  padding-left: 1rem;
 }
-.contact-info .right-section .contact-details .contact-detail {
+.contact-info1 .right-section .contact-details .contact-detail {
   display: flex;
   align-items: flex-start;
   margin-bottom: 3rem;
   margin-left: -10rem;
 }
-.contact-info .right-section .contact-details .contact-detail strong {
+.contact-info1 .right-section .contact-details .contact-detail strong {
   width: 10rem;
   font-weight: bold;
 }
-.contact-info .right-section .contact-details .contact-detail p {
+.contact-info1 .right-section .contact-details .contact-detail p {
   margin: 0;
   font-size: 1rem;
   color: #666;
 }
-.contact-info .right-section .contact-person p {
+.contact-info1 .right-section .contact-person p {
   font-size: 1.1rem;
   color: black;
 }/*# sourceMappingURL=styles.css.map */
