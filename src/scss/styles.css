@@ -1385,9 +1385,6 @@ hr {
 }
 .slider .product .product-rating {
   margin-top: 10px;
-  display: flex;
-  justify-content: center;
-  gap: 2px;
 }
 .slider .product .product-rating .star {
   color: gold;
@@ -1562,8 +1559,8 @@ hr {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 5rem;
   gap: 2rem;
+  margin-top: 5rem;
 }
 .timeline-main .timeline-title-main {
   width: 28rem;

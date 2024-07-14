@@ -55,5 +55,55 @@ document.addEventListener('click', function(event) {
   fetchData();
 
 
+
+  // ADD to Card
+
+document.addEventListener('DOMContentLoaded', function() {
+  const productButtons = document.querySelectorAll('.product-button');
+  const sidebar = document.getElementById('sidebar');
+  const cartItemsContainer = document.getElementById('cartItemsContainer');
+  const sidebarCloseBtn = document.getElementById('sidebarCloseBtn');
+
   
+  function addItemToCart(productTitle, productPrice) {
+      
+      const cartItem = document.createElement('div');
+      cartItem.classList.add('cart-item');
+      cartItem.innerHTML = `
+          <div class="cart-item-details">
+              <img src="https://woodmart.xtemos.com/plants/wp-content/uploads/sites/12/2023/05/w-indoor-plants-small-1-0-351x401.jpg" alt="">
+              <span>${productTitle}</span>
+              <span>${productPrice}</span>
+          </div>
+          <button class="delete-item-btn">Delete</button>
+      `;
+      cartItemsContainer.appendChild(cartItem);
+
+    
+      const deleteBtn = cartItem.querySelector('.delete-item-btn');
+      deleteBtn.addEventListener('click', function() {
+          cartItem.remove();
+      });
+  }
+
   
+  productButtons.forEach(button => {
+      button.addEventListener('click', function() {
+          const product = button.closest('.product');
+          const productTitle = product.querySelector('.product-title').textContent.trim();
+          const productPrice = product.querySelector('.product-price').textContent.trim();
+          addItemToCart(productTitle, productPrice);
+      });
+  });
+
+ 
+  sidebarCloseBtn.addEventListener('click', function() {
+      sidebar.classList.remove('open');
+  });
+
+  
+  const cartIcon = document.getElementById('cartIcon');
+  cartIcon.addEventListener('click', function() {
+      sidebar.classList.toggle('open');
+  });
+});

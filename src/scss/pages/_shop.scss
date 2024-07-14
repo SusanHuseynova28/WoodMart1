@@ -542,17 +542,12 @@
   }
 
   .slider-wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap:1.5rem;
-    flex-direction: row;
+    @include Flex ($justify:center,$items:center,$gap:1.5rem,$direction:row);
+ 
   }
 
   .slider-slide {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include Flex ($justify:center,$items:center);
     margin-bottom: 15rem;
   }
 
@@ -610,8 +605,7 @@
         right: 10px;
         opacity: 0;
         transition: opacity 0.3s ease-in-out;
-        display: flex;
-        flex-direction: column;
+        @include Flex ($direction:column);
         width: 45px;
         height: 5rem;
         background-color: white;
@@ -627,10 +621,8 @@
 
     .product-colors {
       margin-top: 10px;
-      display: flex;
-      justify-content: center;
-      gap: 5px;
-
+      @include Flex ($justify:center,$gap:5px,);
+      
       .color-circle {
         width: 15px;
         height: 15px;
@@ -664,9 +656,7 @@
 
     .product-rating {
       margin-top: 10px;
-      display: flex;
-      justify-content: center;
-      gap: 2px;
+      
 
       .star {
         color: gold;

@@ -80,9 +80,7 @@
     }
    }
    .about-image{
-   
-        display: flex;
-        justify-content: center;
+     @include Flex ($justify:center);
         margin-top: 3rem;
     
    }
@@ -96,16 +94,12 @@
    
   }
    .timeline-main{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+   @include Flex ($justify:center,$items:center,$gap:2rem);
     margin-top: 5rem;
-    gap:2rem;
+   
    .timeline-title-main{
     width: 28rem;
 
-    
-   
     .timeline-desc{
         display: flex;
         flex-direction: column;
