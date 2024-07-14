@@ -24,13 +24,12 @@
     }
 }
 .timeline-events{
-    margin-top: 4rem;
+    margin-top: 2rem;
     @include Flex ($direction:column,$gap:3rem);
     .separator {
         background-color: $explore-color;
         border: 1px solid $explore-color;
         width: 35rem;
-        height: 2px;
        
       }
 

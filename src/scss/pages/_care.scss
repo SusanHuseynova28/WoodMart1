@@ -3,7 +3,7 @@
 .lib-heading {
     font-weight: 500;
     font-size: 28px;
-    color: rgb(94, 104, 33);
+    color: $hover-color;
     padding-left: 1.5rem;
     
   }
@@ -12,8 +12,7 @@
     padding: 1rem;
   
     .lib-wrap {
-      display: flex;
-      flex-wrap: wrap;
+      @include Flex ($wrap:flex-wrap);
   
       .jump-area,
       .lib-info {
@@ -33,7 +32,7 @@
           .jump-label {
             font-size: 1.5rem;
             margin-right: 12px;
-            color: black;
+            color: $line-color;
             
           }
   

@@ -1,56 +1,51 @@
+@use "../utils/mixins" as *;
+@use "../utils/variables" as *;
 .contact-title {
     font-weight: 500;
-    font-size: 28px;
-    color: rgb(94, 104, 33);
+    font-size: 30px;
+    color: $hover-color;
     padding: 2rem;
   }
   
   .care {
     padding: 2rem;
     .container {
-      display: flex;
-      flex-wrap: wrap;
-      gap:4rem;
-  
+        @include Flex ($wrap:flex-wrap,$gap:4rem);
       .care-title,
       .jump-container {
         width: 50%;
       }
   
       .jump-container {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
+        @include Flex ($direction:column,$items:flex-start);
+       
   
         .jump-box {
           width: 100%;
           padding: 15px 20px;
           background-color: rgba(94, 104, 33, 0.1);
-          display: flex;
-          align-items: center;
+          @include Flex ($items:center);
   
           .jump-title {
-            color: black;
+            color: $line-color;
             font-size: 1.2rem;
             margin-right: 10px;
           }
   
           .jump-links {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 5px;
+            @include Flex ($wrap:flex-wrap,$gap:5px);
   
             .jump-link {
               font-size: 1rem;
               text-decoration: none;
-              color: gray;
+              color: $gray-color-word;
   
               &.green {
-                color: #5e6821;
+                color: $explore-color;
               }
   
               &.gray {
-                color: gray;
+                color: $gray-color-word;
               }
   
               &:hover {
@@ -61,11 +56,12 @@
         }
   
         .green-line {
+            margin-top: 30px;
+            margin-left: 10%;
           width: 90%;
           height: 2px;
-          background-color: #5e6821;
-          margin-top: 30px;
-          margin-left: 9.7%;
+          background-color: $explore-color;
+        
         }
   
         .plant-list {
@@ -73,8 +69,7 @@
           padding: 1rem;
   
           .plant-item {
-            display: flex;
-            align-items: center;
+            @include Flex ($items:center);
             padding: 1rem 0;
             border-bottom: 1px solid #e7e5d9;
   
@@ -85,12 +80,10 @@
             .plant-icon {
               width: 3rem;
               height: 4rem;
-              background-color: #5f6921;
-              display: flex;
-              justify-content: center;
-              align-items: center;
+              background-color: $explore-color;
+             @include Flex ($justify:center,$items:center);
               margin-left: -1rem;
-              color: #fff;
+              color: $sidebar-color;
               font-size: 2rem;
               font-weight: bold;
               margin-right: 2rem;
@@ -99,21 +92,22 @@
             .plant-name {
               font-size: 2rem;
               font-weight: 500;
-              color: black;
+              color: $line-color;
   
               &:hover {
-                color: #5e6821;
+                color: $explore-color;
               }
             }
   
             .plant-name-m {
+                color: $line-color;
+              margin-left: 3rem;
               font-size: 2rem;
               font-weight: 500;
-              color: black;
-              margin-left: 3.19rem;
+              
   
               &:hover {
-                color: #5e6821;
+                color: $explore-color;
               }
             }
           }
@@ -127,7 +121,7 @@
         }
   
         p {
-          font-size: 15px;
+          font-size: 18px;
           color: gray;
           font-weight: bold;
         }
@@ -149,8 +143,8 @@
   
       .message-button {
         margin: 1.5rem 0 1rem;
-        background-color: rgb(94, 104, 33);
-        color: white;
+        background-color: $hover-color;
+        color: $hover-word-white;
         border: none;
         cursor: pointer;
         width: 150px;

@@ -8,7 +8,6 @@
 }
 .footer-left {
   margin-right: 10%;
-  margin-left: -50px;
   width: 37%;
   text-align: start;
   
@@ -48,8 +47,8 @@
 
 .subscription-container button {
   padding: 0.5rem 1rem;
-  background-color: #5e6821;
-  color: white;
+  background-color: $explore-color;
+  color: $hover-word-white;
   border: none;
   cursor: pointer;
   &:hover {
@@ -75,15 +74,15 @@
   align-items: center;
   width: 2.3rem;
   height: 2.3rem;
-  border: 2px solid #5e6821;
+  border: 2px solid $explore-color;
   border-radius: 50%;
   margin: 0 0.5rem;
   color: #5e6821;
   text-decoration: none;
   transition: background-color 0.3s, color 0.3s;
   &:hover {
-      background-color: #5e6821;
-      color: white;
+      background-color: $explore-color;
+      color: $hover-word-white;
   }
 }
 

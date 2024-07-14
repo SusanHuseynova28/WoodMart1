@@ -25,66 +25,35 @@ document.addEventListener('click', function(event) {
     }
 });
 
-
-
-// add and delete buttons
-document.addEventListener('DOMContentLoaded', function () {
-    document.querySelectorAll('.add-btn').forEach(function (button) {
-      button.addEventListener('click', function () {
-        const item = button.closest('.item');
-        const newItem = item.cloneNode(true);
-
-        
-        newItem.querySelector('.add-btn').remove();
-
-      
-        document.querySelector('.added-items').appendChild(newItem);
-
-        newItem.querySelector('.delete-btn').addEventListener('click', function () {
-          newItem.remove();
-        });
-      });
-    });
-
-    
-    document.querySelectorAll('.delete-btn').forEach(function (button) {
-      button.addEventListener('click', function () {
-        const item = button.closest('.item');
-
-    
-        if (item.parentNode.classList.contains('added-items')) {
-          item.remove();
-        }
-      });
-    });
-  });
-
   
-  
+  // API
   async function fetchData() {
     try {
       const response = await fetch("http://localhost:3001/cards");
       const data = await response.json();
       console.log(data);
   
-      const cardContainer = document.querySelector(".maincardcontainerfromapi");
+      const cardContainer = document.querySelector(".mainapi");
   
-      data.cards.forEach((card) => {
+      data.forEach((card) => {  
         cardContainer.innerHTML += `
           <div class="card">
             <img src="${card.image}" alt="">
             <div class="overlay">
               <i class="fa-regular fa-heart"></i><span class="count">${card.likes}</span>
               <i class="fa-regular fa-comment"></i><span class="count">${card.comments}</span>
-            </div>
+            </div> 
           </div>
         `;
       });
-  
+         
     } catch (error) {
       console.error('Error fetching data:', error);
     }
   }
   
   fetchData();
+
+
+  
   

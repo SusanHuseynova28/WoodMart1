@@ -5,6 +5,7 @@
     .custom-menu {
       @include Flex($justify: space-between, $items: center);
       cursor: pointer;
+      
   
       .custom-category {
         @include Flex($direction:column,$gap:20px);
@@ -139,7 +140,7 @@
     @include Flex($justify: space-between, $gap: 2rem);
     padding: 6rem;
     width: 100%;
-
+  
     .plant-video-card {
         position: relative;
         width: 800px;
@@ -532,11 +533,19 @@
 .slider {
   width: 100%;
   height: 100%;
+  margin-top: 3rem;
+  .products-word{
+    font-size: 2rem;
+    font-weight: 600;
+    padding-left: 2rem;
+   margin-bottom: 1rem;
+  }
 
   .slider-wrapper {
     display: flex;
     justify-content: center;
     align-items: center;
+    gap:1.5rem;
     flex-direction: row;
   }
 
@@ -544,7 +553,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
     margin-bottom: 15rem;
   }
 
@@ -556,8 +564,17 @@
 
     .product-image-wrapper {
       position: relative;
-      width: 100%;
+      width:18rem;
       height: auto;
+      .badge1 {
+        position: absolute;
+        top: 18px;
+        background: $sidebar-color;
+        padding: 7px 12px;
+        font-size: 14px;
+        font-weight: bold;
+        color: $line-color;
+      }
 
       img {
         width: 100%;
@@ -595,7 +612,7 @@
         transition: opacity 0.3s ease-in-out;
         display: flex;
         flex-direction: column;
-        width: 50px;
+        width: 45px;
         height: 5rem;
         background-color: white;
 
@@ -626,11 +643,11 @@
         }
 
         &.peach {
-          background-color: peachpuff;
+          background-color: rgb(185, 168, 146);
         }
 
         &.pink {
-          background-color: pink;
+          background-color: rgb(171, 167, 163);
         }
 
         &.white {
@@ -678,4 +695,65 @@
     }
   }
 
+}  
+
+.mainapi {
+  display: flex;
+  justify-content: center;
+  gap: 20px; 
+  padding: 3rem;
+  
+  .card {
+    position: relative;
+    width: calc(100% / 3 - 20px); 
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    
+    img {
+      width: 100%;
+      height: auto;
+      display: block;
+      transition: transform 0.3s ease-in-out;
+    }
+    
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color:rgba(0, 0, 0, 0.4);
+      color: #fff;
+      display: flex;
+      gap:0.5rem;
+      justify-content: center;
+      align-items: flex-end;
+      bottom: 1rem;
+      opacity: 0;
+      transition: opacity 0.3s ease-in-out;
+      z-index: 1; 
+      box-sizing: border-box;
+      
+      .fa-regular {
+        margin-right: 4px;
+        margin-bottom: 1rem;
+        font-size: 1.4rem;
+      }
+      
+      .count {
+        margin-left: 4px;
+        margin-bottom: 1rem;
+        font-size: 1.4rem;
+      }
+    }
+    
+    &:hover {
+      transform: translateY(-5px);
+      
+      .overlay {
+        opacity: 1;
+      }
+    }
+  }
 }
