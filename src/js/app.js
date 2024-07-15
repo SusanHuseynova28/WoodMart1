@@ -95,13 +95,11 @@ document.addEventListener('DOMContentLoaded', function() {
           addItemToCart(productTitle, productPrice);
       });
   });
-
  
   sidebarCloseBtn.addEventListener('click', function() {
       sidebar.classList.remove('open');
   });
 
-  
   const cartIcon = document.getElementById('cartIcon');
   cartIcon.addEventListener('click', function() {
       sidebar.classList.toggle('open');

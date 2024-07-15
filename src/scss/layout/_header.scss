@@ -12,7 +12,7 @@
         span {
             color: $a-hover-color;
             font-weight: bold;
-            font-size: $font-size-word;
+            font-size: 15px;
         }
     }
 
@@ -20,9 +20,9 @@
         @include Flex($items: center);
         a {
             @include Flex($items: center);
-            margin-left: $font-size-word;
+            margin-left: 16px;
             color: $a-hover-color;
-            font-size: 18px;
+            font-size: 16px;
             transition: color 0.3s;
             text-decoration: none;
             i {
@@ -92,7 +92,7 @@
                                 margin-bottom: 7px;
                             }
                             span {
-                                font-size: $font-size-word;
+                                font-size:16px;
                                 color: #777;
                                 font-weight: 500;
                             }

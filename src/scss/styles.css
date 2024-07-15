@@ -3,6 +3,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Poppins";
 }
 
 body {
@@ -366,6 +367,7 @@ body {
   flex-wrap: flex-wrap;
   gap: 20px;
   background-color: transparent;
+  margin-top: 20rem;
 }
 .items-container .item {
   flex: calc(25% - 20px);
@@ -384,7 +386,6 @@ body {
   position: relative;
   width: 100%;
   height: 350px;
-  margin-top: 17rem;
 }
 .items-container .item .container .img-container img {
   width: 100%;
@@ -506,7 +507,7 @@ body {
 .site-header-logo span {
   color: #333;
   font-weight: bold;
-  font-size: 16px;
+  font-size: 15px;
 }
 .site-header-actions {
   display: flex;
@@ -517,7 +518,7 @@ body {
   align-items: center;
   margin-left: 16px;
   color: #333;
-  font-size: 18px;
+  font-size: 16px;
   transition: color 0.3s;
   text-decoration: none;
 }
@@ -632,7 +633,7 @@ body {
   font-size: 1rem;
 }
 .sidebar .sidebar-title p {
-  font-size: 1.7rem;
+  font-size: 1.4rem;
 }
 
 .sidebar.visible {
@@ -815,7 +816,7 @@ hr {
   gap: 20px;
   flex-direction: column;
   padding: 4rem;
-  font-size: 50px;
+  font-size: 45px;
   width: 30%;
 }
 .custom-menu-cards .custom-menu .category-item1:hover {
@@ -1166,7 +1167,7 @@ hr {
   cursor: pointer;
 }
 .articles .container .cards .card .card-content .card-content-name {
-  font-size: 23px;
+  font-size: 20px;
   width: 45rem;
   margin-bottom: 2rem;
 }
@@ -1206,14 +1207,14 @@ hr {
   padding: 3rem;
 }
 .explore-container .flower-icon, .explore-container .plant-icon, .explore-container .plant-second-icon {
-  font-size: 4.5rem;
+  font-size: 4rem;
   font-weight: 700;
   color: white;
   display: flex;
   align-items: center;
 }
 .explore-container .plant-icon {
-  font-size: 5rem;
+  font-size: 4rem;
 }
 .explore-container .plant-second-icon {
   margin-top: 1rem;
@@ -1243,8 +1244,9 @@ hr {
   gap: 2rem;
 }
 .explore .explore-content .explore-cards .explore-card-title h3 {
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-weight: 600;
+  width: 30rem;
 }
 .explore .explore-content .explore-cards .explore-card-author {
   display: flex;
@@ -1436,9 +1438,9 @@ hr {
   background-color: rgba(0, 0, 0, 0.4);
   color: #fff;
   display: flex;
-  gap: 0.5rem;
   justify-content: center;
   align-items: flex-end;
+  gap: 0.5rem;
   bottom: 1rem;
   opacity: 0;
   transition: opacity 0.3s ease-in-out;
@@ -1447,7 +1449,7 @@ hr {
 }
 .mainapi .card .overlay .fa-regular {
   margin-right: 4px;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
   font-size: 1.4rem;
 }
 .mainapi .card .overlay .count {
@@ -1471,14 +1473,14 @@ hr {
   gap: 1rem;
   flex-direction: column;
   margin-top: 5rem;
-  width: 28rem;
+  width: 35rem;
 }
 .timeline-content .timeline-description .timeline-heading {
   font-size: 2.9rem;
   font-weight: 600;
 }
 .timeline-content .timeline-description .heading1 {
-  font-size: 1.2rem;
+  font-size: 1rem;
   width: 38rem;
   display: flex;
   flex-direction: column;
@@ -1487,7 +1489,7 @@ hr {
 .timeline-content .timeline-description .heading2 {
   color: gray;
   width: 38rem;
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
 .timeline-content .timeline-events {
   margin-top: 2rem;
@@ -1513,15 +1515,30 @@ hr {
   font-size: 3rem;
 }
 
-.gallery-container {
-  margin-top: 2rem;
+.card-about {
   display: flex;
   justify-content: center;
-  gap: 1rem;
+  align-items: center;
 }
-.gallery-container .gallery-item img {
-  width: 480px;
-  height: 550px;
+.card-about .card-about-img {
+  width: 26.1rem;
+  height: 33rem;
+  overflow: hidden;
+  margin-top: 4.5rem;
+  margin-bottom: 4.5rem;
+}
+.card-about .card-about-img img.main-image {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.separator1 {
+  margin: 0 auto;
+  background-color: #5f6921;
+  width: 95%;
+  height: 1px;
 }
 
 .about-header .about-title {
@@ -1581,7 +1598,7 @@ hr {
 }
 .timeline-main .timeline-title-main .timeline-desc .desc-btn {
   padding: 0.8rem;
-  width: 6rem;
+  width: 8rem;
   background-color: rgb(94, 104, 33);
   border: 1px solid rgb(94, 104, 33);
   color: white;
@@ -1752,10 +1769,10 @@ hr {
 }
 .lib-section .lib-wrap .lib-info h1 {
   margin-bottom: 1rem;
-  font-size: 70px;
+  font-size: 60px;
 }
 .lib-section .lib-wrap .lib-info p {
-  font-size: 17px;
+  font-size: 15px;
   color: gray;
   font-weight: bold;
 }

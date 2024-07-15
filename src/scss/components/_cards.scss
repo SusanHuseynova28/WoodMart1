@@ -414,6 +414,8 @@
   .items-container {
     @include Flex ($wrap:flex-wrap,$gap:20px);
     background-color: transparent; 
+    margin-top: 20rem;
+    
    
 .item {
   flex: calc(25% - 20px); 
@@ -428,13 +430,13 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    
 
     .img-container {
       position: relative;
       width: 100%;
       height: 350px;
-     margin-top: 17rem;
-     
+      
 
       img {
         width: 100%;
@@ -568,6 +570,8 @@
 }
 
 }
+
+
 
 
 
