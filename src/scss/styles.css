@@ -544,7 +544,7 @@ body {
   margin-right: 22px;
 }
 .site-header-nav ul li a {
-  font-size: 18px;
+  font-size: 16px;
   transition: color 0.2s;
   text-decoration: none;
   color: #333;
@@ -1658,6 +1658,22 @@ hr {
   align-items: center;
   text-decoration: none;
   font-size: 1.2rem;
+}
+
+.swiper-button-next {
+  width: 50px;
+  height: 50px;
+  background-color: whitesmoke;
+  border-radius: 50%;
+  color: black;
+}
+
+.swiper-button-prev {
+  width: 50px;
+  height: 50px;
+  background-color: whitesmoke;
+  border-radius: 50%;
+  color: black;
 }
 
 .lib-heading {
